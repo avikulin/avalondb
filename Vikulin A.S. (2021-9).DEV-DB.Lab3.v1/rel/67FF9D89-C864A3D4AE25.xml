@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" mainViewID="E312E32E-6910-9BC8-980E-D810BD067505">
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Physica_lModel" id="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" mainViewID="E312E32E-6910-9BC8-980E-D810BD067505">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 17:46:07 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BC9FB60-0BF0-D8C3-1D21-6B701A769CF2" name="VehicleItem">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>76749E6B-2308-D9A8-E81B-CE9BED118A7C</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VehicleID" id="6DA77B1F-102D-D2DE-02F5-FBA7EF512B81">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>BA80BF67-4E1B-FAF1-FF31-0E6E42154F94</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SerialNumber" id="452DA99A-58B6-A5A9-D7B2-A3FB02226476">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>53BFBC18-9F0D-3BFD-70FD-BF624AD903CE</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RegNumber" id="F1EDCDB7-0B4D-1A2D-8E63-50BB19342950">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>807B32D4-F018-404F-4EBD-98C413E4FB92</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YearOfIssue" id="8A5A65DE-5991-2AD4-2FAB-3EC5F93ACD70">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>C83BD243-CAF2-0C81-00C7-CBD1F70FB655</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GuaranteePeriod" id="6B5DF992-DE68-EC7F-FC29-DB2C081A0A56">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>B7BCAB99-539B-7E2D-1A3B-740A8B7F27B3</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MaxTotalMileage" id="50C08C5C-76D8-C2E4-03B4-B934536E9251">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>41BBDE33-4960-AD99-ACB9-A27A4682EDA6</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VehicleModel_ModelId" id="C5FCA727-2A75-D24F-192D-E92969B43DCF">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>BF783666-5D3F-8B40-40E0-C4240CF18D14</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="750B1EFB-6FD4-0C1F-8114-C4001A9522E1" referredColumn="90BA69C6-27C1-E0EC-24C9-8845F2345674"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3A55F7C-2AB7-AD9F-8686-A37F188CE91C" name="VehicleItem_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>5E2018EC-C2F4-89A3-F050-7BA780A9E56A</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5FCA727-2A75-D24F-192D-E92969B43DCF"/>
+<colUsage columnID="6DA77B1F-102D-D2DE-02F5-FBA7EF512B81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6906531A-738E-B50D-3560-725B993B6032" name="VehicleItem_VehicleModel_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>EA4AAD4D-C15C-3061-2B33-C89FE4911DEB</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5FCA727-2A75-D24F-192D-E92969B43DCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5477E83-963D-926C-D320-85C8D55E157A" name="VehicleModel">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>45E4767C-8DB2-8B14-7A50-BE1059DCA953</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ModelId" id="90BA69C6-27C1-E0EC-24C9-8845F2345674">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>8A4F1135-DF89-9F96-45DE-A5C5BF2C56A2</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ModelName" id="34BABD6F-DDF7-08E0-1048-44EAE5F7AE6B">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>FBF641BB-B3F0-309F-02C1-3A177A0EB6FD</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05ABC2A3-C2A6-83C4-CFCE-EBFACFD437AF" name="VehicleModel_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>31592D41-4694-E1E3-9C8E-32EEF40BF306</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90BA69C6-27C1-E0EC-24C9-8845F2345674"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7710477E-20C1-B848-EE2A-0573D3A838DA" name="LocationTypes">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>642269EB-CF6E-485C-AA2F-B2ABEC5FA020</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TYPE_ID" id="DD806040-3032-96FD-EE00-4440472E2D12">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>FA32111B-F251-CFFC-ACC5-8AFFFA70312C</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE_NAME" id="43616A23-CCC8-7374-A197-9185F4EF90E1">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>DD834621-8083-A0AC-2592-15689F08EB80</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_ID" id="5372D382-D74B-C363-AAD5-36E4A5981345">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>0C6EA434-6FBF-BDE9-C65D-81C7A5377BC3</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CAE2EBD-4AB7-C8AC-AEDC-AF41876D6AC9" name="LOCATION_TYPES_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>2C9905AB-8326-92FC-C536-77BDE8902E5B</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD806040-3032-96FD-EE00-4440472E2D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D87E8F80-A822-67B8-7A7E-CFAC826DFAA9" name="LOCATION_TYPES_NAME_UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:23:06 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43616A23-CCC8-7374-A197-9185F4EF90E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C62331E1-509A-458E-542E-139CB8F25BCF" name="LOCATION_TYPES_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:23:06 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD806040-3032-96FD-EE00-4440472E2D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F417D40-12E7-1F90-5EDD-3AFFAEF3B27D" name="LOCATION_NAME_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:23:06 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43616A23-CCC8-7374-A197-9185F4EF90E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

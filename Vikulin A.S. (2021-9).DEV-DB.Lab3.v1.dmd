@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Vikulin A.S. (2021-9).DEV-DB.Lab3.v1" id="20CB4B4F-76FD-F1A9-2F1E-38E01A1CD848" version="3.5">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 17:46:05 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>20CB4B4F-76FD-F1A9-2F1E-38E01A1CD848</designId>
+</OSDM_Design>

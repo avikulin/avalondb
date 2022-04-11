@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E64CD2EA-F25C-DE98-EE1C-C824FE62A6B4" name="Route">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:23:44 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RouteID" id="4E7329D5-8345-E735-773F-37B9CA3AC809">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:23:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RouteDescription" id="C7C07A6F-779A-2A4C-7D3F-74BE24AC05DD">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:24:35 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RouteLength" id="9A2FDC03-D9E1-ECCC-8235-7C592437046D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:24:47 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TimeToDriveEstimation" id="B9B33391-A438-E4CF-9735-3F1DD1BF5A90">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:25:30 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StartLocationID" id="B25883D8-0333-4AFB-FE23-F3268BEB1E12">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:29:27 UTC</createdTime>
+<generatorID>6E86FEAE-36CE-779D-D90D-96D9B5A8D37E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>14A2D15A-0FE6-8C38-4BDA-BAA347117801</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FinishLocationID" id="07DE253B-DD8A-3A61-8600-56A1ECB2E105">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:29:27 UTC</createdTime>
+<generatorID>F1EC0425-D786-8BE8-4662-AB227902EB38</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>14A2D15A-0FE6-8C38-4BDA-BAA347117801</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationTypeID" id="46C094B7-9700-119D-3D94-24BE7ACBA850">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:44:56 UTC</createdTime>
+<generatorID>6E86FEAE-36CE-779D-D90D-96D9B5A8D37E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>E7E6A27B-FDB0-2AF0-0B62-79BB4BC277F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LocationTypeID1" id="81FA60C6-15F9-C6F2-13C6-A3A83DFBA026">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:44:56 UTC</createdTime>
+<generatorID>F1EC0425-D786-8BE8-4662-AB227902EB38</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>E7E6A27B-FDB0-2AF0-0B62-79BB4BC277F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ModelId" id="476E5419-E47D-16D3-0E31-06F2D6E7CAAB">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:51:39 UTC</createdTime>
+<generatorID>9390B780-CCE0-7E92-A710-AF50EBFDB3EE</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>BF783666-5D3F-8B40-40E0-C4240CF18D14</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VehicleID" id="7CC71AC4-01B4-503F-CED5-E6AC623D77D3">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:51:39 UTC</createdTime>
+<generatorID>9390B780-CCE0-7E92-A710-AF50EBFDB3EE</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>BA80BF67-4E1B-FAF1-FF31-0E6E42154F94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01E9D512-7BAD-A3EF-282B-EB89A3C8DDA3" name="Route PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:35:59 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E7329D5-8345-E735-773F-37B9CA3AC809</attributeRef>
+<attributeRef>07DE253B-DD8A-3A61-8600-56A1ECB2E105</attributeRef>
+<attributeRef>81FA60C6-15F9-C6F2-13C6-A3A83DFBA026</attributeRef>
+<attributeRef>B25883D8-0333-4AFB-FE23-F3268BEB1E12</attributeRef>
+<attributeRef>46C094B7-9700-119D-3D94-24BE7ACBA850</attributeRef>
+<attributeRef>476E5419-E47D-16D3-0E31-06F2D6E7CAAB</attributeRef>
+<attributeRef>7CC71AC4-01B4-503F-CED5-E6AC623D77D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

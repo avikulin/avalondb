@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="3A794308-AC45-5E0A-C9DD-4B28C8D9BB3D" mainViewID="581CAEB2-CB08-E4DE-631D-50E45BC98BFE">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 17:46:05 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

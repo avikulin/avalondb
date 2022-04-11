@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="EF92B91B-7076-260C-5105-10EC52CDC005">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 17:46:05 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

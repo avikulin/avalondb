@@ -4,11 +4,12 @@
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>9D4ED883-7706-E868-4320-DF0179A5154A</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<abbreviation>Реестр конечных точек маршрута</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="LOCATION_ID" id="824EA9EA-59BC-6F37-9D51-FB37803EC0F1">
+<Column name="LocationID" id="824EA9EA-59BC-6F37-9D51-FB37803EC0F1">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>14A2D15A-0FE6-8C38-4BDA-BAA347117801</generatorID>
@@ -19,7 +20,23 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LOCATION_ADDRESS" id="EDF49B2F-5EA8-F820-E404-CB0009191F53">
+<Column name="LOCATION_TYPES_TYPE_ID" id="EBCA88A0-B8E0-F76B-4916-13BBEAD5ECAE">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 20:03:39 UTC</createdTime>
+<generatorID>E7E6A27B-FDB0-2AF0-0B62-79BB4BC277F9</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B2FA937-8164-8949-43F1-B0F6119E86CA" referredColumn="DD806040-3032-96FD-EE00-4440472E2D12"/>
+</associations>
+</Column>
+<Column name="LocationAddress" id="EDF49B2F-5EA8-F820-E404-CB0009191F53">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>5817F9B3-CEC0-7685-2B3A-CAC1F59E8708</generatorID>
@@ -31,7 +48,7 @@
 <ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GPS_LATITUDE" id="ED385654-1FFA-BE12-11FC-96C36E035E2A">
+<Column name="GPSlatitude" id="ED385654-1FFA-BE12-11FC-96C36E035E2A">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>C97ED6DA-B27B-8977-E748-8BA72B41256C</generatorID>
@@ -42,7 +59,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GPS_LONGTITUDE" id="534AF69D-0623-CADA-5CB6-53CC812DE571">
+<Column name="GPSlongtitude" id="534AF69D-0623-CADA-5CB6-53CC812DE571">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>F37ABCB6-5C48-4D12-BA60-E30C6D473A9E</generatorID>
@@ -53,25 +70,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LOCATION_TYPE_ID" id="EBCA88A0-B8E0-F76B-4916-13BBEAD5ECAE">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 20:03:39 UTC</createdTime>
-<generatorID>E7E6A27B-FDB0-2AF0-0B62-79BB4BC277F9</generatorID>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="6B2FA937-8164-8949-43F1-B0F6119E86CA" referredColumn="DD806040-3032-96FD-EE00-4440472E2D12"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D7B724C7-EFE8-3F7C-88CC-55F686DE8820" name="Location_PK">
+<ind_PK_UK id="D7B724C7-EFE8-3F7C-88CC-55F686DE8820" name="LOCATION_PK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>7C40585A-535F-3AD7-9B09-7BA74461EC39</generatorID>
@@ -81,7 +82,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="824EA9EA-59BC-6F37-9D51-FB37803EC0F1"/>
-<colUsage columnID="EBCA88A0-B8E0-F76B-4916-13BBEAD5ECAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="71A46095-8754-04DA-EB46-7E6353CF9039" name="LOCATION_ADDRESS_UN">
@@ -92,6 +92,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EDF49B2F-5EA8-F820-E404-CB0009191F53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E40A5C42-BF74-D195-6ED3-64C0A63F46E9" name="LOCATION_GEOCODING">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 07:42:53 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED385654-1FFA-BE12-11FC-96C36E035E2A"/>
+<colUsage columnID="534AF69D-0623-CADA-5CB6-53CC812DE571"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="1389FBF1-15A4-7BC5-34FC-03DE6408CB9E" name="LOCATION_ID_IDX">
@@ -121,7 +132,7 @@
 <colUsage columnID="EBCA88A0-B8E0-F76B-4916-13BBEAD5ECAE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="494D54AF-45FF-1161-E97B-43099B1B16AA" name="Location_LocationTypes_FK">
+<ind_PK_UK id="494D54AF-45FF-1161-E97B-43099B1B16AA" name="LOCATION_LOCATION_TYPES_FK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>6D2A94F7-09C4-19CD-9A0E-3356327A846B</generatorID>

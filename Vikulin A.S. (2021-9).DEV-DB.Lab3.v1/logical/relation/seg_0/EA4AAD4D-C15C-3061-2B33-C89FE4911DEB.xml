@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Vehicle_to-Model" directorySegmentName="seg_0" id="EA4AAD4D-C15C-3061-2B33-C89FE4911DEB">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vehicle_to_Model" directorySegmentName="seg_0" id="EA4AAD4D-C15C-3061-2B33-C89FE4911DEB">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 19:20:01 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
@@ -7,8 +7,8 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <sourcePk>31592D41-4694-E1E3-9C8E-32EEF40BF306</sourcePk>
-<identifying>true</identifying>
-<optionalSource>true</optionalSource>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>45E4767C-8DB2-8B14-7A50-BE1059DCA953</sourceEntity>

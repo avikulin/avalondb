@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="209B8BF8-0EB5-CDF0-3B60-0B3D44F315F2" containerWithKeyObject="BAE800E7-9FAF-C174-5F0D-A2D71979E560" localFKIndex="087A0C35-A893-D1DC-5AC6-03BB4C47D375" name="Tiket_SeatsLayoutPlan_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>8977A95B-B90B-AFDC-DEE4-78799E913C7D</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<referredTableLongName>SeatsLayoutPlan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5BCC4D5A-0DB8-7D9E-F966-1CDE46BC6F03</referredTableID>
+<keyObject>DE252B78-63A3-6790-29A0-C2488C8DF13A</keyObject>
+<referredKeyID>DE252B78-63A3-6790-29A0-C2488C8DF13A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SeatID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

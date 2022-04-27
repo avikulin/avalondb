@@ -4,6 +4,8 @@
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>45E4767C-8DB2-8B14-7A50-BE1059DCA953</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<ordsAlias>vehiclemodel</ordsAlias>
+<abbreviation>Модели транспортных средств</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -34,7 +36,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="05ABC2A3-C2A6-83C4-CFCE-EBFACFD437AF" name="VehicleModel_PK">
+<ind_PK_UK id="05ABC2A3-C2A6-83C4-CFCE-EBFACFD437AF" name="VEHICLE_MODEL_PK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>31592D41-4694-E1E3-9C8E-32EEF40BF306</generatorID>
@@ -44,6 +46,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="90BA69C6-27C1-E0EC-24C9-8845F2345674"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60BA6F1B-6EA6-CDB1-3331-47CD048A83FE" name="VEHICLE_MODEL_UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 07:52:35 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34BABD6F-DDF7-08E0-1048-44EAE5F7AE6B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

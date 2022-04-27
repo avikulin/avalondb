@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74ABA120-CF98-28C1-B769-88818C630ABB" name="Driver">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>90953A0A-AFFC-4FBD-3C32-E1D37FD7478B</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Driver_ID" id="FBC27376-6778-03A9-93A8-C4B791E07B7F">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="840492DC-D636-AA0F-6797-8F315267C8F3" name="Driver_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FBC27376-6778-03A9-93A8-C4B791E07B7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

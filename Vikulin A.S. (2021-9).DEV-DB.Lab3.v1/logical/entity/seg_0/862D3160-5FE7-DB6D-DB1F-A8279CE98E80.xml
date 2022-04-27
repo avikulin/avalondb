@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="862D3160-5FE7-DB6D-DB1F-A8279CE98E80" name="TripStateHistory">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 11:42:28 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Журнал состояния рейсов</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TripCode" id="0D5ABBE3-CA0B-1F41-2ABB-86B14829B847">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 11:43:55 UTC</createdTime>
+<generatorID>D737E081-5A6D-F409-9987-75B4670520AA</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>A2CCC76A-4EE6-E6D6-7346-A006F921CD84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="StateID" id="5089F007-878D-BFAB-24C1-1E3A122A31A1">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 11:44:29 UTC</createdTime>
+<generatorID>E1894BCF-F3CC-4D57-9C72-B303B393648B</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>3AFAA1BB-C2D8-F2CE-3351-AB66584E651D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateTimeRegistered" id="19D5455D-B730-8B94-48F0-89AF966D2178">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 12:07:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="857A2639-F883-184B-783E-ADE25DDA13CB" name="TripStateHistory PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 11:47:32 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D5ABBE3-CA0B-1F41-2ABB-86B14829B847</attributeRef>
+<attributeRef>5089F007-878D-BFAB-24C1-1E3A122A31A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

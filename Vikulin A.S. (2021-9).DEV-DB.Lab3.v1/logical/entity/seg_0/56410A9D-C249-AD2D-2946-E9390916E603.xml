@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D4ED883-7706-E868-4320-DF0179A5154A" name="Location">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56410A9D-C249-AD2D-2946-E9390916E603" name="SeatsLayoutPlan">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:20:51 UTC</createdTime>
+<createdTime>2022-04-27 10:59:19 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
@@ -14,84 +14,74 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>Реестр конечных точек маршрута</shortName>
+<shortName>Планы посадочных мест в салоне транспортных средств</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="LocationID" id="14A2D15A-0FE6-8C38-4BDA-BAA347117801">
+<Attribute name="SeatID" id="E6DA3F96-C512-12CD-83CE-868FC8A4F65F">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:21:06 UTC</createdTime>
+<createdTime>2022-04-27 11:00:02 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="TypeID" id="E7E6A27B-FDB0-2AF0-0B62-79BB4BC277F9">
+<Attribute name="ModelId" id="48B85230-FC28-EEDD-92B0-21D638F8FB4B">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:44:56 UTC</createdTime>
-<generatorID>6D2A94F7-09C4-19CD-9A0E-3356327A846B</generatorID>
+<createdTime>2022-04-27 11:00:59 UTC</createdTime>
+<generatorID>2B31CB51-551E-1874-B550-93839651F3A7</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<referedAttribute>FA32111B-F251-CFFC-ACC5-8AFFFA70312C</referedAttribute>
+<referedAttribute>8A4F1135-DF89-9F96-45DE-A5C5BF2C56A2</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
+<dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="LocationAddress" id="5817F9B3-CEC0-7685-2B3A-CAC1F59E8708">
+<Attribute name="AllowKids" id="D657800D-3837-355F-D679-E8041B3329B9">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:21:27 UTC</createdTime>
+<createdTime>2022-04-27 11:02:48 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>1000 CHAR</dataTypeSize>
-<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="GPSlatitude" id="C97ED6DA-B27B-8977-E748-8BA72B41256C">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:21:38 UTC</createdTime>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<engineerTo>
-<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT034</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="GPSlongtitude" id="F37ABCB6-5C48-4D12-BA60-E30C6D473A9E">
+<Attribute name="AllowPets" id="CB85B6D4-B1D0-527C-2F72-2B5E5D779C95">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:31:48 UTC</createdTime>
+<createdTime>2022-04-27 11:03:49 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT034</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="7C40585A-535F-3AD7-9B09-7BA74461EC39" name="Location PK">
+<identifier id="F7F24991-4974-35B9-22EA-D2BFD41B6F74" name="SeatsLayoutPlan PK">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:29:24 UTC</createdTime>
+<createdTime>2022-04-27 11:03:10 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>14A2D15A-0FE6-8C38-4BDA-BAA347117801</attributeRef>
+<attributeRef>E6DA3F96-C512-12CD-83CE-868FC8A4F65F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

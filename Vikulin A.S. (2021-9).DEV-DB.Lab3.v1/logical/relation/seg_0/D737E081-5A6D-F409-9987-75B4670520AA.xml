@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Location_to_LocationTypes" directorySegmentName="seg_0" id="6D2A94F7-09C4-19CD-9A0E-3356327A846B">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Trip_to_TripStateHistory" directorySegmentName="seg_0" id="D737E081-5A6D-F409-9987-75B4670520AA">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:23:16 UTC</createdTime>
+<createdTime>2022-04-27 11:43:55 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<sourcePk>2C9905AB-8326-92FC-C536-77BDE8902E5B</sourcePk>
-<identifying>false</identifying>
+<sourcePk>CA3AF1BA-0AF0-6F18-0E8B-1E1CEBC459EF</sourcePk>
+<identifying>true</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>642269EB-CF6E-485C-AA2F-B2ABEC5FA020</sourceEntity>
+<sourceEntity>B7E8096D-860A-3D1E-1B60-2FB3C1452261</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>9D4ED883-7706-E868-4320-DF0179A5154A</targetEntity>
+<targetEntity>862D3160-5FE7-DB6D-DB1F-A8279CE98E80</targetEntity>
 <transferable>true</transferable>
 </Relation>

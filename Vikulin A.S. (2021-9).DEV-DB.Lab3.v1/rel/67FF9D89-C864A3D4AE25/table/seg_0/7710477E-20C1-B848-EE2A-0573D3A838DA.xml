@@ -4,11 +4,13 @@
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>642269EB-CF6E-485C-AA2F-B2ABEC5FA020</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<ordsAlias>locationtypes</ordsAlias>
+<abbreviation>Типы точек маршрута</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="TYPE_ID" id="DD806040-3032-96FD-EE00-4440472E2D12">
+<Column name="TypeID" id="DD806040-3032-96FD-EE00-4440472E2D12">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>FA32111B-F251-CFFC-ACC5-8AFFFA70312C</generatorID>
@@ -20,7 +22,7 @@
 <ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TYPE_NAME" id="43616A23-CCC8-7374-A197-9185F4EF90E1">
+<Column name="TypeName" id="43616A23-CCC8-7374-A197-9185F4EF90E1">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>DD834621-8083-A0AC-2592-15689F08EB80</generatorID>
@@ -30,18 +32,6 @@
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>200 CHAR</dataTypeSize>
 <ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="LOCATION_ID" id="5372D382-D74B-C363-AAD5-36E4A5981345">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 20:03:39 UTC</createdTime>
-<generatorID>0C6EA434-6FBF-BDE9-C65D-81C7A5377BC3</generatorID>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

@@ -14,6 +14,7 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<shortName>Типы точек маршрута</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="TypeID" id="FA32111B-F251-CFFC-ACC5-8AFFFA70312C">
 <createdBy>Andrey Vikulin</createdBy>
@@ -40,19 +41,6 @@
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>200 CHAR</dataTypeSize>
 <ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="LocationID" id="0C6EA434-6FBF-BDE9-C65D-81C7A5377BC3">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:29:27 UTC</createdTime>
-<generatorID>6D2A94F7-09C4-19CD-9A0E-3356327A846B</generatorID>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<engineerTo>
-<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
-</engineerTo>
-<referedAttribute>14A2D15A-0FE6-8C38-4BDA-BAA347117801</referedAttribute>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

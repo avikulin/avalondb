@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="09915BC8-EF2A-9D2D-55B8-E80ECA0EAF5E" name="Tiket">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 12:13:32 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Проданный билет</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TicketNumber" id="5FC0DE78-8790-75D3-35DF-4411E96C8C2D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 12:15:30 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TripCode" id="FE3959D4-61C0-5D38-E9AA-9567157F7C8A">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 12:14:00 UTC</createdTime>
+<generatorID>DD4C671D-7374-5B5C-60CE-8581B363B751</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>A2CCC76A-4EE6-E6D6-7346-A006F921CD84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SeatID" id="EC91527B-E56C-DA09-4729-6B0050905BEF">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 12:14:38 UTC</createdTime>
+<generatorID>8977A95B-B90B-AFDC-DEE4-78799E913C7D</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>E6DA3F96-C512-12CD-83CE-868FC8A4F65F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BB143B66-55AC-FBBE-16EB-BB84F13E10C3" name="Tiket PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 12:14:24 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FE3959D4-61C0-5D38-E9AA-9567157F7C8A</attributeRef>
+<attributeRef>EC91527B-E56C-DA09-4729-6B0050905BEF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

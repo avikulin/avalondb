@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A63D196-2363-CA03-D78F-F991C0F9A050" name="TripStateHistory">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>862D3160-5FE7-DB6D-DB1F-A8279CE98E80</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<abbreviation>Журнал состояния рейсов</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ScheduledTrips_TripCode" id="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>0D5ABBE3-CA0B-1F41-2ABB-86B14829B847</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A84E1FD7-C725-EFE9-A00C-693D7BCE88BA" referredColumn="B46D6888-B58A-C9A2-D2E0-AA586139FA4E"/>
+</associations>
+</Column>
+<Column name="TripStates_StateID" id="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>5089F007-878D-BFAB-24C1-1E3A122A31A1</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1A76652-6432-FDE7-213C-347DB961375D" referredColumn="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
+</associations>
+</Column>
+<Column name="DateTimeRegistered" id="9D561C40-F3D2-4B86-38E1-296374C468CC">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>19D5455D-B730-8B94-48F0-89AF966D2178</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AEA18AA2-A3AD-E518-EED9-CD776DA659CA" name="TripStateHistory_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>857A2639-F883-184B-783E-ADE25DDA13CB</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6"/>
+<colUsage columnID="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F346996-608B-929F-2989-9BC5CCE9E40B" name="TripStateHistory_ScheduledTrips_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>D737E081-5A6D-F409-9987-75B4670520AA</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E76A196C-C49C-6313-8A75-2A34A481A4B4" name="TripStateHistory_TripStates_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>E1894BCF-F3CC-4D57-9C72-B303B393648B</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

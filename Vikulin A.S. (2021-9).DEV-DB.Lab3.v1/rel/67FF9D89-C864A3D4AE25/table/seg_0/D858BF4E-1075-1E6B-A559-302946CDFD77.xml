@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D858BF4E-1075-1E6B-A559-302946CDFD77" name="ScheduledTrips">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>B7E8096D-860A-3D1E-1B60-2FB3C1452261</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<abbreviation>Запланированный рейс</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TripCode" id="B46D6888-B58A-C9A2-D2E0-AA586139FA4E">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>A2CCC76A-4EE6-E6D6-7346-A006F921CD84</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Route_RouteID" id="545BD889-8138-04CF-2537-8BF43EAAF4CF">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>0652FED9-8F84-E5D2-60E7-8CC235DCB00C</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69670659-F520-BBBB-4D4D-4CBBBAEBB387" referredColumn="A3637141-6CD6-8661-AC4B-9418A2E571B3"/>
+</associations>
+</Column>
+<Column name="VehicleItem_VehicleID" id="A09C522C-CF28-29BA-5228-933C8B610187">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>33552D78-8377-DDB5-47C4-AC5825BB7250</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="404AC753-0664-8B77-E00A-4BFB6900877F" referredColumn="6DA77B1F-102D-D2DE-02F5-FBA7EF512B81"/>
+</associations>
+</Column>
+<Column name="DriverID" id="6A1D299B-4539-F296-199C-691A3953E08A">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>32895494-7558-0DD8-BE5C-A07DF501C35B</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="CF54F79E-5F93-42E1-68EF-799CA972A7B1">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>F7552237-0AEC-1BDB-8E70-C4BBF65AB1CD</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Driver_Driver_ID" id="D9FF7424-2841-5171-7C9B-46A3DBEC5D90">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="124F6FC4-2A6D-98D4-8B3E-4CACA3A9149A" referredColumn="FBC27376-6778-03A9-93A8-C4B791E07B7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE7D98EC-F035-AFF5-E040-7702760CAED3" name="ScheduledTrips_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>CA3AF1BA-0AF0-6F18-0E8B-1E1CEBC459EF</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B46D6888-B58A-C9A2-D2E0-AA586139FA4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A11B33EC-7D03-6B54-9AC2-8DB628886ED5" name="ScheduledTrips_Driver_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>52F78263-2ADC-D648-F60A-E7CBBD913A89</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9FF7424-2841-5171-7C9B-46A3DBEC5D90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="928C991D-176D-8C94-05F4-6A811381E61A" name="ScheduledTrips_Route_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>164B33ED-D03C-0627-34A7-C10DFF130501</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="545BD889-8138-04CF-2537-8BF43EAAF4CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83CCF080-77B9-E65D-4B22-433020C68F3A" name="ScheduledTrips_VehicleItem_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>EFA48F95-6743-C069-7A17-4BD205648ED3</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A09C522C-CF28-29BA-5228-933C8B610187"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

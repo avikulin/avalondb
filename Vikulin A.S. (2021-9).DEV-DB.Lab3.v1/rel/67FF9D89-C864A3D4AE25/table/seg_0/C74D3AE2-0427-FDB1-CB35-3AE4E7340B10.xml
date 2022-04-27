@@ -4,6 +4,7 @@
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>E64CD2EA-F25C-DE98-EE1C-C824FE62A6B4</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<abbreviation>Реестр маршрутов поездок</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -42,7 +43,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TimeToDriveEstimation" id="214DCAB4-82E5-C532-D1B2-5E6B708858E9">
+<Column name="TimeToDriveEst" id="214DCAB4-82E5-C532-D1B2-5E6B708858E9">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>B9B33391-A438-E4CF-9735-3F1DD1BF5A90</generatorID>
@@ -53,7 +54,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Location_LocationID2" id="B7F660A7-25DA-9DAF-CC90-0347CBECDC85">
+<Column name="LOCATION_LOCATION_ID" id="B7F660A7-25DA-9DAF-CC90-0347CBECDC85">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>B25883D8-0333-4AFB-FE23-F3268BEB1E12</generatorID>
@@ -68,7 +69,7 @@
 <colAssociation fkAssociation="A1F0E52B-1743-6563-E5A9-70A175EA482C" referredColumn="824EA9EA-59BC-6F37-9D51-FB37803EC0F1"/>
 </associations>
 </Column>
-<Column name="Location_LocationID" id="0A7DB3BB-1FA7-BFDB-4C60-29C4EBB8436A">
+<Column name="LOCATION_LOCATION_ID1" id="0A7DB3BB-1FA7-BFDB-4C60-29C4EBB8436A">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>07DE253B-DD8A-3A61-8600-56A1ECB2E105</generatorID>
@@ -83,55 +84,7 @@
 <colAssociation fkAssociation="4233179F-46FA-1AB2-728E-1B4F710DB439" referredColumn="824EA9EA-59BC-6F37-9D51-FB37803EC0F1"/>
 </associations>
 </Column>
-<Column name="Location_LocationTypes_TypeID2" id="AEF336EF-8124-8C4D-D435-8DA723A8C62D">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 20:03:39 UTC</createdTime>
-<generatorID>46C094B7-9700-119D-3D94-24BE7ACBA850</generatorID>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A1F0E52B-1743-6563-E5A9-70A175EA482C" referredColumn="EBCA88A0-B8E0-F76B-4916-13BBEAD5ECAE"/>
-</associations>
-</Column>
-<Column name="Location_LocationTypes_TypeID" id="8E4C7516-B91E-30A2-D044-1C9854CE1FCE">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 20:03:39 UTC</createdTime>
-<generatorID>81FA60C6-15F9-C6F2-13C6-A3A83DFBA026</generatorID>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4233179F-46FA-1AB2-728E-1B4F710DB439" referredColumn="EBCA88A0-B8E0-F76B-4916-13BBEAD5ECAE"/>
-</associations>
-</Column>
-<Column name="VehicleItem_VehicleModel_ModelId" id="4F3F51E0-05EC-EF5B-9732-47CCD9C8F54D">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 20:03:39 UTC</createdTime>
-<generatorID>476E5419-E47D-16D3-0E31-06F2D6E7CAAB</generatorID>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D88DAE3E-CC90-AFDE-0436-32A127A711F5" referredColumn="C5FCA727-2A75-D24F-192D-E92969B43DCF"/>
-</associations>
-</Column>
-<Column name="VehicleItem_VehicleID" id="12F61256-23B8-3ED2-739F-AA2CE1169DE1">
+<Column name="VEHICLE_ID" id="12F61256-23B8-3ED2-739F-AA2CE1169DE1">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>7CC71AC4-01B4-503F-CED5-E6AC623D77D3</generatorID>
@@ -140,7 +93,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -149,7 +102,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="18D4ACD6-33C4-9179-CF83-87BB49453ABC" name="Route_PK">
+<ind_PK_UK id="18D4ACD6-33C4-9179-CF83-87BB49453ABC" name="ROUTE_PK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>01E9D512-7BAD-A3EF-282B-EB89A3C8DDA3</generatorID>
@@ -159,12 +112,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A3637141-6CD6-8661-AC4B-9418A2E571B3"/>
-<colUsage columnID="0A7DB3BB-1FA7-BFDB-4C60-29C4EBB8436A"/>
-<colUsage columnID="8E4C7516-B91E-30A2-D044-1C9854CE1FCE"/>
-<colUsage columnID="B7F660A7-25DA-9DAF-CC90-0347CBECDC85"/>
-<colUsage columnID="AEF336EF-8124-8C4D-D435-8DA723A8C62D"/>
-<colUsage columnID="4F3F51E0-05EC-EF5B-9732-47CCD9C8F54D"/>
-<colUsage columnID="12F61256-23B8-3ED2-739F-AA2CE1169DE1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="426B02CB-E4C9-631B-D3DE-247AEF1B5483" name="Route_VehicleItem_FK">
@@ -175,11 +122,10 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4F3F51E0-05EC-EF5B-9732-47CCD9C8F54D"/>
 <colUsage columnID="12F61256-23B8-3ED2-739F-AA2CE1169DE1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="888BDCA2-68C8-4533-5D7B-3C13CB5DB11A" name="Route_Location_FK">
+<ind_PK_UK id="888BDCA2-68C8-4533-5D7B-3C13CB5DB11A" name="ROUTE_LOCATION_FK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>F1EC0425-D786-8BE8-4662-AB227902EB38</generatorID>
@@ -188,10 +134,9 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0A7DB3BB-1FA7-BFDB-4C60-29C4EBB8436A"/>
-<colUsage columnID="8E4C7516-B91E-30A2-D044-1C9854CE1FCE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="183803E1-1066-B60B-3738-8788049F3E1F" name="Route_Location_FKv2">
+<ind_PK_UK id="183803E1-1066-B60B-3738-8788049F3E1F" name="ROUTE_LOCATION_FKv1">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>6E86FEAE-36CE-779D-D90D-96D9B5A8D37E</generatorID>
@@ -200,7 +145,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B7F660A7-25DA-9DAF-CC90-0347CBECDC85"/>
-<colUsage columnID="AEF336EF-8124-8C4D-D435-8DA723A8C62D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="750B1EFB-6FD4-0C1F-8114-C4001A9522E1" containerWithKeyObject="5BC9FB60-0BF0-D8C3-1D21-6B701A769CF2" localFKIndex="6906531A-738E-B50D-3560-725B993B6032" name="VEHICLE_ITEM_VEHICLE_MODEL_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="136C2406-499D-09F7-CBD0-359F1DFD8BF2" containerWithKeyObject="5BCC4D5A-0DB8-7D9E-F966-1CDE46BC6F03" localFKIndex="16063AEC-93AC-9321-0209-8C87DC050D29" name="SeatsLayoutPlan_VehicleModel_FK">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 20:03:39 UTC</createdTime>
-<generatorID>EA4AAD4D-C15C-3061-2B33-C89FE4911DEB</generatorID>
+<createdTime>2022-04-27 14:35:20 UTC</createdTime>
+<generatorID>2B31CB51-551E-1874-B550-93839651F3A7</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <referredTableLongName>VehicleModel</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

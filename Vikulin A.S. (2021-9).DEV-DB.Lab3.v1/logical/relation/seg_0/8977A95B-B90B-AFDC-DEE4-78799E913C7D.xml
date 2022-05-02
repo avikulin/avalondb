@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SeatLayoutPlan_to_Tickets" directorySegmentName="seg_0" id="8977A95B-B90B-AFDC-DEE4-78799E913C7D">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiket SeatsLayoutPlan FK" directorySegmentName="seg_0" id="8977A95B-B90B-AFDC-DEE4-78799E913C7D">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 12:14:38 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
@@ -7,7 +7,7 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <sourcePk>F7F24991-4974-35B9-22EA-D2BFD41B6F74</sourcePk>
-<identifying>true</identifying>
+<identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

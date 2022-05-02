@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB0A698E-EDE4-78B8-100F-CB8841508F98" name="IdentityDocType">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:07:42 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Типы документов, удостоверяющих личность физического лица</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DocTypeId" id="791AEB5A-29AB-93E2-50B5-A2576CE31E7D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:08:31 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Код типа документа, удостоверяющего личность</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TypeDescription" id="4001E876-FE69-760C-BC29-3DFCA1AF8D36">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:08:49 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Тип документа, удостоверяющего личность</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AllowToDrive" id="E09D2FD0-B593-9A73-8ACD-CDFCB7AFDFFA">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:15:26 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Документ разрешает управление ТС</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AllowToTrip" id="B19CA88F-111C-2179-641A-E5F745AED1A2">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:16:01 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Документ может использоваться для идентификации пассажиров</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D822381D-18F5-F57D-AAFE-AAEC23A09A31" name="IdentityDocType PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:08:47 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>791AEB5A-29AB-93E2-50B5-A2576CE31E7D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B5193162-C856-3B8F-3249-910C69C8149B" name="IdentityDocType UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>64FC5C5E-979A-ACDB-70C4-BBC6B4B254C6</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>4001E876-FE69-760C-BC29-3DFCA1AF8D36</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

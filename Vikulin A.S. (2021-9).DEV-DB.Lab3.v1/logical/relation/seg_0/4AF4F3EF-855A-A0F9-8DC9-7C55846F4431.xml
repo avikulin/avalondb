@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tiket TariffType FK" directorySegmentName="seg_0" id="4AF4F3EF-855A-A0F9-8DC9-7C55846F4431">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:23:22 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<sourcePk>268EDE5A-EA25-EC71-D358-450E33871F48</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9D05CB92-89C0-D14F-9C4A-E19C2E16E6D1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>09915BC8-EF2A-9D2D-55B8-E80ECA0EAF5E</targetEntity>
+<transferable>true</transferable>
+</Relation>

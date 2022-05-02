@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Driver_IdentityDocument_FK" directorySegmentName="seg_0" id="40F20EAD-F5C5-953C-D699-53C6ED3E7CF2">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:36:00 UTC</createdTime>
+<generatorID>A92C4CF4-DCB9-06A4-957E-4EB0F4CD6322</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<sourcePk>80E740D7-E52F-A217-6F4E-CEAB8D5B6B1A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F6ED8ED2-6C4F-88D3-48D4-31D647CF4640</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>90953A0A-AFFC-4FBD-3C32-E1D37FD7478B</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -5,7 +5,7 @@
 <generatorID>E1894BCF-F3CC-4D57-9C72-B303B393648B</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <referredTableLongName>TripStates</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>RESTRICT</deleteRule>
 <referredTableID>F9992AF5-E3C9-38B5-03BD-912FBBD51BAD</referredTableID>
 <keyObject>F4931C7F-9D2A-A2D6-EB07-E32E2BBA5C71</keyObject>
 <referredKeyID>F4931C7F-9D2A-A2D6-EB07-E32E2BBA5C71</referredKeyID>

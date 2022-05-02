@@ -21,7 +21,7 @@
 <ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="VehicleModel_ModelId" id="3C4D42B8-78DE-5820-DDD1-7D08E5207FD9">
+<Column name="ModelId" id="3C4D42B8-78DE-5820-DDD1-7D08E5207FD9">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>48B85230-FC28-EEDD-92B0-21D638F8FB4B</generatorID>
@@ -73,6 +73,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="02626D7B-49D5-A305-9D44-B1DBAF259FBE"/>
+<colUsage columnID="3C4D42B8-78DE-5820-DDD1-7D08E5207FD9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="16063AEC-93AC-9321-0209-8C87DC050D29" name="SeatsLayoutPlan_VehicleModel_FK">

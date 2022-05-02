@@ -1,0 +1,7 @@
+ALTER TABLE DICT.VehicleCathegory ADD CONSTRAINT VehicleCathegory_PK PRIMARY KEY CLUSTERED (CatId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.VehicleCathegory ADD CONSTRAINT VehicleCathegory_LevelCode_UN UNIQUE NONCLUSTERED (LevelCode)
+GO

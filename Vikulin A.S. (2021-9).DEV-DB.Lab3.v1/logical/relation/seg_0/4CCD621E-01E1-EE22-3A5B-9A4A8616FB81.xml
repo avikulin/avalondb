@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Driver Person FK" directorySegmentName="seg_0" id="4CCD621E-01E1-EE22-3A5B-9A4A8616FB81">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:23:15 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<sourcePk>FF8E6AAA-20FA-ADCC-59D7-C9FDC4770B85</sourcePk>
+<targetPk>E3282B2F-CB46-0B4C-041B-E6F3090A33AB</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C155AFFE-8B42-062F-E917-EAC4262917EF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>90953A0A-AFFC-4FBD-3C32-E1D37FD7478B</targetEntity>
+<transferable>true</transferable>
+</Relation>

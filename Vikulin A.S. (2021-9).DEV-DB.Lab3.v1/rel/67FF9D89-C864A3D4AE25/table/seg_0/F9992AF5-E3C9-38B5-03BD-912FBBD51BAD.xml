@@ -16,11 +16,30 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Descruption" id="31F37CDF-DED2-3C4E-B77F-7A6255E75802">
+<Column name="PrevStateID" id="D9D47BC7-6190-D159-ECFC-D257515C13E4">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:22:41 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="201597FA-B063-1247-8955-7C63B19BB1C3" referredColumn="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
+</associations>
+</Column>
+<Column name="Description" id="31F37CDF-DED2-3C4E-B77F-7A6255E75802">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>2FBC8855-41BA-AFAD-9A55-55E1EFCC2380</generatorID>
@@ -28,7 +47,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="IsInitial" id="A7F72D29-5176-1F2B-915B-BB1CD2B5CD42">
@@ -36,7 +56,6 @@
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>AFE692F4-BCD5-3A70-23A8-7696A55297C3</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -48,7 +67,6 @@
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>01F6F678-5C77-82AD-1001-BF85DCF4BCD2</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -60,7 +78,16 @@
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>197EAFBF-07A3-8267-73D3-F1FF438679C5</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AllowBooking" id="3BD83662-7343-0656-82F0-83759648118B">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:25:11 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -81,5 +108,59 @@
 <colUsage columnID="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="65E20CA1-A493-ACB7-F1EA-A6065CDA84B6" name="TripStates_StateID_IsInitial_IsInProgress_isTerminal_UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:08:39 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
+<colUsage columnID="A7F72D29-5176-1F2B-915B-BB1CD2B5CD42"/>
+<colUsage columnID="CA10CD08-9B4F-C915-7768-5BC42F5DC597"/>
+<colUsage columnID="F694D1D1-5C8F-10CA-1B10-19DBEA869D73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CCB2E5C-787C-FBA4-DCC3-CF687F373BAB" name="TripStates_Description_UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:08:39 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31F37CDF-DED2-3C4E-B77F-7A6255E75802"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AED7D506-6EFF-7947-C2AA-49759BAE2EAB" name="TripStates_Desc_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:08:39 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31F37CDF-DED2-3C4E-B77F-7A6255E75802"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2219B7C4-2AE1-965A-C477-12EE92E1186C" name="TripStates_TripStates_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:22:41 UTC</createdTime>
+<generatorID>4AF4767B-155F-0ADD-3D9E-0453A4D10F41</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9D47BC7-6190-D159-ECFC-D257515C13E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="TripStates_Type_CK" directorySegmentName="seg_0" id="98400F1B-B66D-2576-F2DD-50898681F12E">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:08:39 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<rule><![CDATA[1 = 
+(IsInitial & ~IsInProgress & ~IsTerminal) | 
+(~IsInitial & IsInProgress & ~IsTerminal) | 
+(~IsInitial & ~IsInProgress & IsTerminal)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

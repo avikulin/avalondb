@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ScheduledTrips_TripCode" id="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6">
+<Column name="TripCode" id="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>0D5ABBE3-CA0B-1F41-2ABB-86B14829B847</generatorID>
@@ -17,21 +17,23 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A84E1FD7-C725-EFE9-A00C-693D7BCE88BA" referredColumn="B46D6888-B58A-C9A2-D2E0-AA586139FA4E"/>
+<colAssociation fkAssociation="304D588E-36DF-1623-A2CE-ADC3DCB0809C" referredColumn="B46D6888-B58A-C9A2-D2E0-AA586139FA4E"/>
 </associations>
 </Column>
-<Column name="TripStates_StateID" id="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA">
+<Column name="StateID" id="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>5089F007-878D-BFAB-24C1-1E3A122A31A1</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -39,12 +41,11 @@
 <colAssociation fkAssociation="F1A76652-6432-FDE7-213C-347DB961375D" referredColumn="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
 </associations>
 </Column>
-<Column name="DateTimeRegistered" id="9D561C40-F3D2-4B86-38E1-296374C468CC">
+<Column name="DateTimeRegister" id="9D561C40-F3D2-4B86-38E1-296374C468CC">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>19D5455D-B730-8B94-48F0-89AF966D2178</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
@@ -62,19 +63,28 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6"/>
 <colUsage columnID="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA"/>
+<colUsage columnID="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0F346996-608B-929F-2989-9BC5CCE9E40B" name="TripStateHistory_ScheduledTrips_FK">
+<ind_PK_UK id="DA9A26FC-FF71-FBB7-9315-E504794D8A4E" name="TripStateHistory_TripCode_StateID_DateTimeRegister_UN">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-27 14:35:20 UTC</createdTime>
-<generatorID>D737E081-5A6D-F409-9987-75B4670520AA</generatorID>
+<createdTime>2022-05-01 10:01:24 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<indexState>Foreign Key</indexState>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6"/>
+<colUsage columnID="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA"/>
+<colUsage columnID="9D561C40-F3D2-4B86-38E1-296374C468CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF7F194A-95D3-CB36-67F9-0579A91E1869" name="TripStateHistory_DateTime_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:02:20 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D561C40-F3D2-4B86-38E1-296374C468CC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="E76A196C-C49C-6313-8A75-2A34A481A4B4" name="TripStateHistory_TripStates_FK">
@@ -86,6 +96,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="796A2C7F-0C72-1B29-9538-F8EB6A89D2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E566E94B-0431-3F34-A782-72121FD07555" name="TripStateHistory_ScheduledTrips_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 11:29:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6ECEB4B1-D618-4CB1-BD55-1BC5F74131F6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

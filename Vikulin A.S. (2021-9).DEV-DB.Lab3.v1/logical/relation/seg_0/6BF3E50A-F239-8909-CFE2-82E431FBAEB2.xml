@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IdentityDocument Person FK" directorySegmentName="seg_0" id="6BF3E50A-F239-8909-CFE2-82E431FBAEB2">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:24:11 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<sourcePk>FF8E6AAA-20FA-ADCC-59D7-C9FDC4770B85</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C155AFFE-8B42-062F-E917-EAC4262917EF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F6ED8ED2-6C4F-88D3-48D4-31D647CF4640</targetEntity>
+<transferable>true</transferable>
+</Relation>

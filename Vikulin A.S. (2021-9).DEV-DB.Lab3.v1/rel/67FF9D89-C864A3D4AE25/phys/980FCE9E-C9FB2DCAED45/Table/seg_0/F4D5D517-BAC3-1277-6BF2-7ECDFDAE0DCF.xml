@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TariffType" directorySegmentName="seg_0" id="F4D5D517-BAC3-1277-6BF2-7ECDFDAE0DCF">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<schema>DCB5BCFA-A19C-DD95-51BD-FFEF30923506</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CodeName" id="7D0044C2-2877-93FF-CAD7-99C691AE7D0D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="TariffId" id="A35942B0-7924-1E90-1945-3A18A23448EF">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Description" id="E62BDF86-40F9-9C0A-4E8B-5757090B8B12">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TariffType_PK" id="CCEC72C3-B34F-8853-6D79-8E9D849EA4D8">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="304D588E-36DF-1623-A2CE-ADC3DCB0809C" containerWithKeyObject="7A63D196-2363-CA03-D78F-F991C0F9A050" localFKIndex="E566E94B-0431-3F34-A782-72121FD07555" name="TripStateHistory_ScheduledTrips_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 11:29:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<referredTableLongName>ScheduledTrips</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>D858BF4E-1075-1E6B-A559-302946CDFD77</referredTableID>
+<keyObject>18F01FD5-BD8F-23FE-B8A3-1535CFD8EA8D</keyObject>
+<referredKeyID>18F01FD5-BD8F-23FE-B8A3-1535CFD8EA8D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TripCode</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

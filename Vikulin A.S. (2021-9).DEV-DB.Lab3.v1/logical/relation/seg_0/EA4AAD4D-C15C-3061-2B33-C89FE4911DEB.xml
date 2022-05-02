@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Vehicle_to_Model" directorySegmentName="seg_0" id="EA4AAD4D-C15C-3061-2B33-C89FE4911DEB">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VehicleItem VehicleModel FK" directorySegmentName="seg_0" id="EA4AAD4D-C15C-3061-2B33-C89FE4911DEB">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 19:20:01 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>

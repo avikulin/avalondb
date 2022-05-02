@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C155AFFE-8B42-062F-E917-EAC4262917EF" name="Person">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:03:09 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Реестр физических лиц</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PersonId" id="81146B32-0CC2-21B3-356B-647C7A931429">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:03:50 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>ИД физ. лица</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LastName" id="574014AD-3AC3-81A2-E3EC-CF496D6D890E">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:05:17 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Фамилия</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FirstName" id="035E8C06-7893-8675-6A23-1A26B9D26E44">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:06:25 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Имя</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MiddleName" id="C54241BB-895B-CF65-5B01-8958119AC6DA">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:05:47 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Отчество</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BirthDate" id="AB80BC3C-8811-EF86-6BF0-4C0F9C362055">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:06:57 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Дата рождения</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SexId" id="53A1CC78-0978-E95C-F767-76915D595D61">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 15:03:42 UTC</createdTime>
+<generatorID>1EB2D143-3646-3654-1B23-901B0B99C085</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>76ECC335-FA74-83E6-F636-EA9CD312401A</referedAttribute>
+<synonym>Код пола</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DriverId" id="AF096B26-BF48-9DE9-6234-37B32EACFC3B">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:59:52 UTC</createdTime>
+<generatorID>4CCD621E-01E1-EE22-3A5B-9A4A8616FB81</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>F16E7B9C-F2C0-52DC-576A-7073FD2E8989</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF8E6AAA-20FA-ADCC-59D7-C9FDC4770B85" name="Person PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:05:44 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81146B32-0CC2-21B3-356B-647C7A931429</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1107ABE3-B81A-EE0D-C847-39A4D5959397" name="Person UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>DF88F4C2-8DF3-A925-C8F6-A7C704739498</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>574014AD-3AC3-81A2-E3EC-CF496D6D890E</attributeRef>
+<attributeRef>035E8C06-7893-8675-6A23-1A26B9D26E44</attributeRef>
+<attributeRef>C54241BB-895B-CF65-5B01-8958119AC6DA</attributeRef>
+<attributeRef>AB80BC3C-8811-EF86-6BF0-4C0F9C362055</attributeRef>
+<attributeRef>53A1CC78-0978-E95C-F767-76915D595D61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Person" directorySegmentName="seg_0" id="79717B35-580B-9932-AA4F-A4F06461EEB2">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<schema>5A635956-F413-3794-D378-4B65341F14E7</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="SexId" id="0F526510-E97F-F15E-8645-A9DEA1AC4B8B">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="PersonId" id="3400EB02-BAC1-9D85-656C-C5747014191C">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="LastName" id="5B69EFA4-A57C-EAF4-AB64-064610F39497">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="MiddleName" id="EB993ED1-C905-A176-3A15-E83244D455FE">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="BirthDate" id="EBED77DD-E5C9-7246-8750-17BC20E9E0CD">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="FirstName" id="F9F19571-7E9D-F6C4-FECA-93EFA91A5517">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="Person_Sex_IDX" id="4B0BBA5E-10A1-E9E1-122A-0B25F671C6A0">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="Person_Name_IDX" id="A642222B-F66E-4CD3-CF5E-CA139D33C706">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="Person_BirthDate_IDX" id="DF42EE51-41CD-51EA-F8C8-480B616EA45D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Person_Sex_FK" id="E6792DBC-FF53-C9F7-E06B-7A4FD5E8D489">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Person_PK" id="2724E5D3-10FF-B7DB-212F-A33E2A0E34C9">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="Person_LastName_FirstName_MiddleName_BirthDate_SexId_UN" id="DF88F4C2-8DF3-A925-C8F6-A7C704739498">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</UniqueKey>
+</uniqueKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A92C4CF4-DCB9-06A4-957E-4EB0F4CD6322" containerWithKeyObject="74ABA120-CF98-28C1-B769-88818C630ABB" localFKIndex="0705A566-E452-CA68-959B-7D9B85995F31" name="Driver_IdentityDocument_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:12:45 UTC</createdTime>
+<generatorID>80E740D7-E52F-A217-6F4E-CEAB8D5B6B1A</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<referredTableLongName>IdentityDocument</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>FE5BC0DD-760A-B25F-D554-67B9231996B3</referredTableID>
+<keyObject>5F900AA1-9CE3-3267-CBF4-6D424BA6372F</keyObject>
+<referredKeyID>5F900AA1-9CE3-3267-CBF4-6D424BA6372F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DocId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

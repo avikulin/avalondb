@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.SequenceSqlServerv2k12" name="TripCodeSeq" directorySegmentName="seg_0" id="48FBF234-BF0C-9E65-57F4-041BC1A70500">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 21:52:58 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<cache>10</cache>
+<database>DB_NULLELEMENT</database>
+<incrementBy>1</incrementBy>
+<integerType>int</integerType>
+<schema>4F69DCB0-12FA-8431-6B07-9B0964A83EF4</schema>
+<startWith>1</startWith>
+</SequenceSqlServerv2k12>

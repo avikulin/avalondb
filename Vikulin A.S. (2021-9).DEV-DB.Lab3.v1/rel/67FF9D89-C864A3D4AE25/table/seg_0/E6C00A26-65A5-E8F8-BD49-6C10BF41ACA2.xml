@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6C00A26-65A5-E8F8-BD49-6C10BF41ACA2" name="IdentityDocType">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>EB0A698E-EDE4-78B8-100F-CB8841508F98</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<abbreviation>Типы документов, удостоверяющих личность физического лица</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DocTypeId" id="8BFE3AC4-D268-40B7-B1F7-33B6D3FDE70D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>791AEB5A-29AB-93E2-50B5-A2576CE31E7D</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TypeDescription" id="A7E3F722-3265-1543-5797-CCB2F50DED7C">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>4001E876-FE69-760C-BC29-3DFCA1AF8D36</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AllowToDrive" id="19B6CE94-4442-5EDF-C945-CF36B7A48E73">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>E09D2FD0-B593-9A73-8ACD-CDFCB7AFDFFA</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AllowToTrip" id="95C3BC13-4994-64DD-8EB4-F495DDEF9277">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>B19CA88F-111C-2179-641A-E5F745AED1A2</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8879E0B-9002-B21E-080C-04E0F087A72B" name="IdentityDocType_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>D822381D-18F5-F57D-AAFE-AAEC23A09A31</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BFE3AC4-D268-40B7-B1F7-33B6D3FDE70D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64FC5C5E-979A-ACDB-70C4-BBC6B4B254C6" name="IdentityDocType_TypeDescription_UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 21:39:30 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7E3F722-3265-1543-5797-CCB2F50DED7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D46B48B-0573-5711-8E31-ED2F915EB0E4" name="IdentityDocType_Desc_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 21:39:30 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7E3F722-3265-1543-5797-CCB2F50DED7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A39AE89D-4190-95C2-5D56-8ABDE5F9B5B9" name="IdentityDocType_AllowDrive_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 21:39:30 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19B6CE94-4442-5EDF-C945-CF36B7A48E73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF442A53-668A-4C8E-7599-E84F3DE3067C" name="IdentityDocType_AllowTrip_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 21:39:30 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95C3BC13-4994-64DD-8EB4-F495DDEF9277"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

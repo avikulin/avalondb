@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E8B5B96E-9810-CE7A-3CBC-98682DF18776" containerWithKeyObject="BAE800E7-9FAF-C174-5F0D-A2D71979E560" localFKIndex="80F7679D-58EC-63D9-7091-21071FB91842" name="Tiket_TariffType_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>4AF4F3EF-855A-A0F9-8DC9-7C55846F4431</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<referredTableLongName>TariffType</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>F4D5D517-BAC3-1277-6BF2-7ECDFDAE0DCF</referredTableID>
+<keyObject>CCEC72C3-B34F-8853-6D79-8E9D849EA4D8</keyObject>
+<referredKeyID>CCEC72C3-B34F-8853-6D79-8E9D849EA4D8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TariffId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

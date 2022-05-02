@@ -8,18 +8,62 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Driver_ID" id="FBC27376-6778-03A9-93A8-C4B791E07B7F">
+<Column name="DriverId" id="FBC27376-6778-03A9-93A8-C4B791E07B7F">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="PersonId" id="3E9344BD-C8F7-9567-9E2C-DAE524601C01">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>08DE8114-813D-2832-2584-24C3EEB8AF31</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96D4E1F6-3369-4136-F452-37D5D003DEC3" referredColumn="3400EB02-BAC1-9D85-656C-C5747014191C"/>
+</associations>
+</Column>
+<Column name="CatId" id="1207FED6-1A81-9577-D01C-0691AA3D4484">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>92DE40F5-E58C-4E77-EE0A-35F2DF046AE0</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7DE95AD0-6941-31F1-037F-37C6A780DC74" referredColumn="7A40DB79-565E-EF86-A2ED-BD2DE3AF9439"/>
+</associations>
+</Column>
+<Column name="DocId" id="3A043BCF-32EB-8CA5-008D-69E82FC95E01">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:12:45 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A92C4CF4-DCB9-06A4-957E-4EB0F4CD6322" referredColumn="61C64F84-B29B-7ADE-0984-13E4C0BD59A9"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -31,6 +75,84 @@
 <indexState>Primary Constraint</indexState>
 <indexColumnUsage>
 <colUsage columnID="FBC27376-6778-03A9-93A8-C4B791E07B7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C998A8CE-6F6F-7A59-7CFE-33F07A07D200" name="DriverUN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>7B79465C-6F2D-384A-2C03-2493435D1203</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E9344BD-C8F7-9567-9E2C-DAE524601C01"/>
+<colUsage columnID="1207FED6-1A81-9577-D01C-0691AA3D4484"/>
+<colUsage columnID="3A043BCF-32EB-8CA5-008D-69E82FC95E01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D03ACD5A-3886-9EBE-9448-9420B5577954" name="Driver_Person_Cathegory_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4CCD621E-01E1-EE22-3A5B-9A4A8616FB81</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3E9344BD-C8F7-9567-9E2C-DAE524601C01"/>
+<colUsage columnID="1207FED6-1A81-9577-D01C-0691AA3D4484"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96B48D16-F47A-5519-7526-CC772DCB638A" name="Driver_Licence_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:15:19 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A043BCF-32EB-8CA5-008D-69E82FC95E01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1A37AE6-7408-29A4-170C-5EBDAB356859" name="Driver__IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 22:02:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4CCD621E-01E1-EE22-3A5B-9A4A8616FB81</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3E9344BD-C8F7-9567-9E2C-DAE524601C01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E89F86C-9E11-2EAB-56A7-F90FF67E1A48" name="Driver_VehicleCathegory_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>FABB31D4-BE2E-847D-A39F-3E2DC859861E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1207FED6-1A81-9577-D01C-0691AA3D4484"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F05FA333-C9F7-B577-DD03-C4C773F1EA71" name="Driver_Person_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>4CCD621E-01E1-EE22-3A5B-9A4A8616FB81</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E9344BD-C8F7-9567-9E2C-DAE524601C01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0705A566-E452-CA68-959B-7D9B85995F31" name="Driver_IdentityDocument_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:12:45 UTC</createdTime>
+<generatorID>80E740D7-E52F-A217-6F4E-CEAB8D5B6B1A</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A043BCF-32EB-8CA5-008D-69E82FC95E01"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

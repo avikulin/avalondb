@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Driver" directorySegmentName="seg_0" id="74ABA120-CF98-28C1-B769-88818C630ABB">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<schema>5B2CA8A9-7E54-1025-FF95-0C178CC10B16</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CatId" id="1207FED6-1A81-9577-D01C-0691AA3D4484">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="DocId" id="3A043BCF-32EB-8CA5-008D-69E82FC95E01">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:12:45 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="PersonId" id="3E9344BD-C8F7-9567-9E2C-DAE524601C01">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="DriverId" id="FBC27376-6778-03A9-93A8-C4B791E07B7F">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="Driver_Licence_IDX" id="96B48D16-F47A-5519-7526-CC772DCB638A">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:15:19 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="Driver_Person_Cathegory_IDX" id="D03ACD5A-3886-9EBE-9448-9420B5577954">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="Driver__IDX" id="F1A37AE6-7408-29A4-170C-5EBDAB356859">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 22:02:51 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Driver_IdentityDocument_FK" id="0705A566-E452-CA68-959B-7D9B85995F31">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 07:12:45 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Driver_VehicleCathegory_FK" id="7E89F86C-9E11-2EAB-56A7-F90FF67E1A48">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Driver_Person_FK" id="F05FA333-C9F7-B577-DD03-C4C773F1EA71">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Driver_PK" id="840492DC-D636-AA0F-6797-8F315267C8F3">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="DriverUN" id="C998A8CE-6F6F-7A59-7CFE-33F07A07D200">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</UniqueKey>
+</uniqueKeys>
+</TableProxySqlServerv2k5>

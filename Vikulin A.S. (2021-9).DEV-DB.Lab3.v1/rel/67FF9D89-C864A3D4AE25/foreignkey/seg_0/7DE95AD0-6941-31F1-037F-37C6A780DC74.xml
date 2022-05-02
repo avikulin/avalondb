@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7DE95AD0-6941-31F1-037F-37C6A780DC74" containerWithKeyObject="74ABA120-CF98-28C1-B769-88818C630ABB" localFKIndex="7E89F86C-9E11-2EAB-56A7-F90FF67E1A48" name="Driver_VehicleCathegory_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>FABB31D4-BE2E-847D-A39F-3E2DC859861E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<referredTableLongName>VehicleCathegory</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>E25F116B-9A89-C93B-E275-5ECE75C5072D</referredTableID>
+<keyObject>56CEDC0E-9957-A051-F5A8-1F29F012E228</keyObject>
+<referredKeyID>56CEDC0E-9957-A051-F5A8-1F29F012E228</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CatId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

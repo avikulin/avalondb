@@ -1,0 +1,7 @@
+ALTER TABLE DICT.IdentityDocType ADD CONSTRAINT IdentityDocType_PK PRIMARY KEY CLUSTERED (DocTypeId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.IdentityDocType ADD CONSTRAINT IdentityDocType_TypeDescription_UN UNIQUE NONCLUSTERED (TypeDescription)
+GO

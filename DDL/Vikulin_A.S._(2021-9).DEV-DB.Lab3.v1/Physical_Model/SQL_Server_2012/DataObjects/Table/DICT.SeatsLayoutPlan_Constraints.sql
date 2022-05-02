@@ -1,0 +1,5 @@
+ALTER TABLE DICT.SeatsLayoutPlan ADD CONSTRAINT SeatsLayoutPlan_PK PRIMARY KEY CLUSTERED (SeatID, ModelId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO

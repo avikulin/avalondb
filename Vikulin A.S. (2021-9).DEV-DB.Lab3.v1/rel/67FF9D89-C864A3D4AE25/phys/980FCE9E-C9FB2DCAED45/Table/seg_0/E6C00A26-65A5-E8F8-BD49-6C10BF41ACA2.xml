@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="IdentityDocType" directorySegmentName="seg_0" id="E6C00A26-65A5-E8F8-BD49-6C10BF41ACA2">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<schema>DCB5BCFA-A19C-DD95-51BD-FFEF30923506</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="AllowToDrive" id="19B6CE94-4442-5EDF-C945-CF36B7A48E73">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="DocTypeId" id="8BFE3AC4-D268-40B7-B1F7-33B6D3FDE70D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="AllowToTrip" id="95C3BC13-4994-64DD-8EB4-F495DDEF9277">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="TypeDescription" id="A7E3F722-3265-1543-5797-CCB2F50DED7C">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="IdentityDocType_Desc_IDX" id="0D46B48B-0573-5711-8E31-ED2F915EB0E4">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="IdentityDocType_AllowDrive_IDX" id="A39AE89D-4190-95C2-5D56-8ABDE5F9B5B9">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="IdentityDocType_AllowTrip_IDX" id="AF442A53-668A-4C8E-7599-E84F3DE3067C">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="IdentityDocType_PK" id="A8879E0B-9002-B21E-080C-04E0F087A72B">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="IdentityDocType_UN" id="64FC5C5E-979A-ACDB-70C4-BBC6B4B254C6">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</UniqueKey>
+</uniqueKeys>
+</TableProxySqlServerv2k5>

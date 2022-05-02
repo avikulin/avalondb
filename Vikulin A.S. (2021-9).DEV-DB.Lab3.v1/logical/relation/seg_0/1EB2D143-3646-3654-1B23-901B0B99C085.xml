@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Person Sex FK" directorySegmentName="seg_0" id="1EB2D143-3646-3654-1B23-901B0B99C085">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 15:03:42 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<sourcePk>53436718-FA9E-7010-FEBB-A70DA576995E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A19BC5B6-76DA-528C-C2DD-46A5FF2B1B12</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C155AFFE-8B42-062F-E917-EAC4262917EF</targetEntity>
+<transferable>true</transferable>
+</Relation>

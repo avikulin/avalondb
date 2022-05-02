@@ -23,22 +23,43 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>ИД статуса</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PrevStateID" id="316E4DB5-9362-EADF-27A4-3250D2BA5605">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:36:00 UTC</createdTime>
+<generatorID>389BBE0B-CC4B-EC81-368B-A2EDAC052A5E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3AFAA1BB-C2D8-F2CE-3351-AB66584E651D</referedAttribute>
+<synonym>Предыдущий статус</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descruption" id="2FBC8855-41BA-AFAD-9A55-55E1EFCC2380">
+<Attribute name="Description" id="2FBC8855-41BA-AFAD-9A55-55E1EFCC2380">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 11:41:48 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Наименование статуса</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="IsInitial" id="AFE692F4-BCD5-3A70-23A8-7696A55297C3">
 <createdBy>Andrey Vikulin</createdBy>
@@ -47,7 +68,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<synonym>Начальный статус</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -60,7 +81,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<synonym>Промежуточный статус</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -73,6 +94,20 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Конечный статус</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AllowBooking" id="9EF0FC65-6E44-6D0A-1F62-E26C7E8B3748">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:36:00 UTC</createdTime>
+<generatorID>3BD83662-7343-0656-82F0-83759648118B</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -81,7 +116,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="4AF4767B-155F-0ADD-3D9E-0453A4D10F41" name="TripStatus PK">
+<identifier id="4AF4767B-155F-0ADD-3D9E-0453A4D10F41" name="TripStates_PK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 11:42:07 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
@@ -91,6 +126,33 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>3AFAA1BB-C2D8-F2CE-3351-AB66584E651D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="390AD1EE-7238-47C6-B252-90245A517331" name="TripStates UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>65E20CA1-A493-ACB7-F1EA-A6065CDA84B6</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>3AFAA1BB-C2D8-F2CE-3351-AB66584E651D</attributeRef>
+<attributeRef>AFE692F4-BCD5-3A70-23A8-7696A55297C3</attributeRef>
+<attributeRef>01F6F678-5C77-82AD-1001-BF85DCF4BCD2</attributeRef>
+<attributeRef>197EAFBF-07A3-8267-73D3-F1FF438679C5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FE6EE3B9-C3E7-9997-22D4-C57DB797A6FB" name="TripStates Desc UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>7CCB2E5C-787C-FBA4-DCC3-CF687F373BAB</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>2FBC8855-41BA-AFAD-9A55-55E1EFCC2380</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

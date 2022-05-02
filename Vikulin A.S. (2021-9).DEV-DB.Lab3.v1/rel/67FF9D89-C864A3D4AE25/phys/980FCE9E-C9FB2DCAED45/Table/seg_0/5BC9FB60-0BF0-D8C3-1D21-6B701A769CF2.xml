@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="VehicleItem" directorySegmentName="seg_0" id="5BC9FB60-0BF0-D8C3-1D21-6B701A769CF2">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<schema>5B2CA8A9-7E54-1025-FF95-0C178CC10B16</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="SerialNumber" id="452DA99A-58B6-A5A9-D7B2-A3FB02226476">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="MaxTotalMileage" id="50C08C5C-76D8-C2E4-03B4-B934536E9251">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="GuaranteePeriod" id="6B5DF992-DE68-EC7F-FC29-DB2C081A0A56">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="VehicleID" id="6DA77B1F-102D-D2DE-02F5-FBA7EF512B81">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="YearOfIssue" id="8A5A65DE-5991-2AD4-2FAB-3EC5F93ACD70">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Is_Active" id="B9EE238D-7063-274D-E8FF-44112790DD4A">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="ModelId" id="C5FCA727-2A75-D24F-192D-E92969B43DCF">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="RegNumber" id="F1EDCDB7-0B4D-1A2D-8E63-50BB19342950">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="VehicleItem_RegNum_IDXv1" id="15878A12-63E2-0782-E6E5-13E9FC1CEF81">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 09:24:54 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.IndexProxySqlServerv2k12" name="VehicleItem_Model_IDX" id="DA701097-5725-2B35-560D-CAF640B699ED">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 09:24:54 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<recomputeStatistics>ON</recomputeStatistics>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="VehicleItem_VehicleModel_FK" id="6906531A-738E-B50D-3560-725B993B6032">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="VehicleItem_PK" id="C3A55F7C-2AB7-AD9F-8686-A37F188CE91C">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="VEHICLE_ITEM_SER_NUM_UN" id="57D7E00A-D455-0EB0-2220-40C74AFE654A">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="VEHICLE_ITEM_REG_NUM_UN" id="D1BF566D-F5FB-3A16-26F5-CC4B679B0FEB">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 08:59:07 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+</UniqueKey>
+</uniqueKeys>
+</TableProxySqlServerv2k5>

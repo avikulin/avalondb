@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FEFA10FF-1A10-018F-A8ED-1A681F9B96CF" name="Sex">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>A19BC5B6-76DA-528C-C2DD-46A5FF2B1B12</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<abbreviation>Справочник полов</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SexId" id="AEFAA868-9400-F316-D9C2-42E54B5A3C82">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>76ECC335-FA74-83E6-F636-EA9CD312401A</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="0A11613E-BAFB-E942-B1D2-05E009991BAA">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>E95F9F6A-8687-3F3C-6A1A-7FF22F0DAAE0</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27B60DEB-86BD-F275-DAE1-6CA80EFBB553" name="Sex_PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>53436718-FA9E-7010-FEBB-A70DA576995E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEFAA868-9400-F316-D9C2-42E54B5A3C82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09E3CEFF-1069-7884-6014-624929618261" name="Sex_Name_UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 21:24:44 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A11613E-BAFB-E942-B1D2-05E009991BAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="616EE896-A0C5-FE1A-970B-A0B637341B6D" name="Sex_Name_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 21:24:44 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A11613E-BAFB-E942-B1D2-05E009991BAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

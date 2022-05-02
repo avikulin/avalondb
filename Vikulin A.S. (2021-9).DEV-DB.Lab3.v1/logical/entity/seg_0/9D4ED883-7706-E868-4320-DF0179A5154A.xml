@@ -14,7 +14,7 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>Реестр конечных точек маршрута</shortName>
+<shortName>Реестр местоположений (конечных точек маршрута)</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="LocationID" id="14A2D15A-0FE6-8C38-4BDA-BAA347117801">
 <createdBy>Andrey Vikulin</createdBy>
@@ -23,6 +23,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>ИД местоположения</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -37,11 +38,12 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <referedAttribute>FA32111B-F251-CFFC-ACC5-8AFFFA70312C</referedAttribute>
+<synonym>Код типа местоположения</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>20 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="LocationAddress" id="5817F9B3-CEC0-7685-2B3A-CAC1F59E8708">
 <createdBy>Andrey Vikulin</createdBy>
@@ -50,6 +52,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Адрес местоположения</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -63,10 +66,13 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Географическая широта (GPS)</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
 </Attribute>
 <Attribute name="GPSlongtitude" id="F37ABCB6-5C48-4D12-BA60-E30C6D473A9E">
 <createdBy>Andrey Vikulin</createdBy>
@@ -75,10 +81,13 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Географическая долгота (GPS)</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -92,6 +101,31 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>14A2D15A-0FE6-8C38-4BDA-BAA347117801</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9044A425-84F1-7D71-51D5-CCAA7F2AA77E" name="Location Address UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>71A46095-8754-04DA-EB46-7E6353CF9039</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>5817F9B3-CEC0-7685-2B3A-CAC1F59E8708</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5FFF9503-1E6D-9082-F855-8DC2B958D54E" name="Location GeoCoding UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>E40A5C42-BF74-D195-6ED3-64C0A63F46E9</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>C97ED6DA-B27B-8977-E748-8BA72B41256C</attributeRef>
+<attributeRef>F37ABCB6-5C48-4D12-BA60-E30C6D473A9E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

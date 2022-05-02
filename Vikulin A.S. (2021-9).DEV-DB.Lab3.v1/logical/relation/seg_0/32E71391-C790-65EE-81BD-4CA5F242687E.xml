@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VehicleModel VehicleCathegory FK" directorySegmentName="seg_0" id="32E71391-C790-65EE-81BD-4CA5F242687E">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:21:22 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<sourcePk>489DBB84-070A-BC17-94C9-44D934462BD6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F4A1523F-677E-9972-392E-B97A73586C6C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45E4767C-8DB2-8B14-7A50-BE1059DCA953</targetEntity>
+<transferable>true</transferable>
+</Relation>

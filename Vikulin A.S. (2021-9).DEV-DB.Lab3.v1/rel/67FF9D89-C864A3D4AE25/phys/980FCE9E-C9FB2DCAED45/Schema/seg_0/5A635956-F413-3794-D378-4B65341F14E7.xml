@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="REG" directorySegmentName="seg_0" id="5A635956-F413-3794-D378-4B65341F14E7">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:27:20 UTC</createdTime>
+<comment><![CDATA[Регистры сведений]]></comment>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<owner>DB_NULLELEMENT_dbo</owner>
+<database>DB_NULLELEMENT</database>
+</SchemaSqlServerv2k5>

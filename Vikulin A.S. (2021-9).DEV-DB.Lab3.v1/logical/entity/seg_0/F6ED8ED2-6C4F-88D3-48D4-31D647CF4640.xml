@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6ED8ED2-6C4F-88D3-48D4-31D647CF4640" name="IdentityDocument">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:09:21 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Документы, удостоверяющие личность физического лица</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DocId" id="A45E891C-2850-27B9-08D7-561EA294F01D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:09:59 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>ИД документа, удостоверяющего личность</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DocTypeId" id="985876EF-12A3-CD2B-6A37-2CD6CEDD20A9">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:13:21 UTC</createdTime>
+<generatorID>93009388-8FC4-598D-F78E-9E52E9C3F9B7</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>791AEB5A-29AB-93E2-50B5-A2576CE31E7D</referedAttribute>
+<synonym>Код типа документа</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PersonId" id="8C1C7C82-6A88-ED76-CF26-93B2E9B2E98D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:24:11 UTC</createdTime>
+<generatorID>6BF3E50A-F239-8909-CFE2-82E431FBAEB2</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>81146B32-0CC2-21B3-356B-647C7A931429</referedAttribute>
+<synonym>Код физ. лица</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SeriesNum" id="50DB928F-FCDD-A469-CFAF-E071638C0624">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:10:27 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Серия документа, удостоверяющего личность</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DocumentNum" id="0867A9B4-4004-B1AC-394D-F45541C9078D">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:11:42 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Номер документа, удостоверяющего личность</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IssuerOrg" id="202D9057-7CD5-D40E-12E5-566DEDBF4157">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:12:14 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Организация, выдавшая документ</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IssueDate" id="BFDE2F5B-6F61-4FA0-AE07-E65A449BE124">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:12:48 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<synonym>Дата выдачи документа</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80E740D7-E52F-A217-6F4E-CEAB8D5B6B1A" name="IdentityDocument PK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:10:24 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A45E891C-2850-27B9-08D7-561EA294F01D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8EA60879-DF77-C411-9496-2BC694A11905" name="IdentityDocument UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>20A7C684-6794-F9B7-4F0F-FB3AF06AA4E3</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>985876EF-12A3-CD2B-6A37-2CD6CEDD20A9</attributeRef>
+<attributeRef>8C1C7C82-6A88-ED76-CF26-93B2E9B2E98D</attributeRef>
+<attributeRef>50DB928F-FCDD-A469-CFAF-E071638C0624</attributeRef>
+<attributeRef>0867A9B4-4004-B1AC-394D-F45541C9078D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

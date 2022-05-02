@@ -4,7 +4,6 @@
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>76749E6B-2308-D9A8-E81B-CE9BED118A7C</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<ordsAlias>vehicleitem</ordsAlias>
 <abbreviation>Реестр транспортных средств</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -22,7 +21,7 @@
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="VEHICLE_MODEL_ModelId" id="C5FCA727-2A75-D24F-192D-E92969B43DCF">
+<Column name="ModelId" id="C5FCA727-2A75-D24F-192D-E92969B43DCF">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>BF783666-5D3F-8B40-40E0-C4240CF18D14</generatorID>
@@ -31,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -96,7 +95,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IS_ACTIVE" id="B9EE238D-7063-274D-E8FF-44112790DD4A">
+<Column name="IsActive" id="B9EE238D-7063-274D-E8FF-44112790DD4A">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 08:14:44 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
@@ -108,7 +107,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C3A55F7C-2AB7-AD9F-8686-A37F188CE91C" name="VEHICLE_ITEM_PK">
+<ind_PK_UK id="C3A55F7C-2AB7-AD9F-8686-A37F188CE91C" name="VehicleItem_PK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>5E2018EC-C2F4-89A3-F050-7BA780A9E56A</generatorID>
@@ -120,17 +119,19 @@
 <colUsage columnID="6DA77B1F-102D-D2DE-02F5-FBA7EF512B81"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="57D7E00A-D455-0EB0-2220-40C74AFE654A" name="VEHICLE_ITEM_SER_NUM_UN">
+<ind_PK_UK id="57D7E00A-D455-0EB0-2220-40C74AFE654A" name="VehicleItem_ModelId_SerialNumber_YearOfIssue_UN">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 08:04:03 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="C5FCA727-2A75-D24F-192D-E92969B43DCF"/>
 <colUsage columnID="452DA99A-58B6-A5A9-D7B2-A3FB02226476"/>
+<colUsage columnID="8A5A65DE-5991-2AD4-2FAB-3EC5F93ACD70"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D1BF566D-F5FB-3A16-26F5-CC4B679B0FEB" name="VEHICLE_ITEM_REG_NUM_UN">
+<ind_PK_UK id="D1BF566D-F5FB-3A16-26F5-CC4B679B0FEB" name="VehicleItem_RegNumber_IsActive_UN">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 08:04:03 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
@@ -141,7 +142,25 @@
 <colUsage columnID="B9EE238D-7063-274D-E8FF-44112790DD4A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6906531A-738E-B50D-3560-725B993B6032" name="VEHICLE_ITEM_VEHICLE_MODEL_FK">
+<ind_PK_UK id="DA701097-5725-2B35-560D-CAF640B699ED" name="VehicleItem_Model_IDX">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 09:24:54 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5FCA727-2A75-D24F-192D-E92969B43DCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15878A12-63E2-0782-E6E5-13E9FC1CEF81" name="VehicleItem_RegNum_IDXv1">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 09:24:54 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1EDCDB7-0B4D-1A2D-8E63-50BB19342950"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6906531A-738E-B50D-3560-725B993B6032" name="VehicleItem_VehicleModel_FK">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>EA4AAD4D-C15C-3061-2B33-C89FE4911DEB</generatorID>
@@ -158,21 +177,21 @@
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 08:04:03 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<rule><![CDATA[YEAR_OF_ISSUE > 1950]]></rule>
+<rule><![CDATA[YearOfIssue > 1950]]></rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="VEHICLE_ITEM_CK_GUARANTEE_PERIOD" directorySegmentName="seg_0" id="12A1B987-9DB0-BBD9-6F55-F25B73C6A86C">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 08:04:03 UTC</createdTime>
 <notes><![CDATA[At least 1 year guarantee needed for passenger transportation]]></notes>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<rule><![CDATA[GUARANTEE_PERIOD > 0]]></rule>
+<rule><![CDATA[GuaranteePeriod > DATEADD(year,1, GETDATE()) ]]></rule>
 </tableCheckConstraint>
 <tableCheckConstraint name="VEHICLE_ITEM_CK_MAX_MILEAGE" directorySegmentName="seg_0" id="E411700F-43CE-FCDC-EB4A-C0A85DCCB7DB">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 08:04:03 UTC</createdTime>
 <notes><![CDATA[At least 1000 miles guarantee needed for passenger transportation]]></notes>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<rule><![CDATA[MAX_TOTAL_MILEAGE > 1 000]]></rule>
+<rule><![CDATA[MaxTotalMileage > 1000]]></rule>
 </tableCheckConstraint>
 </tableCheckConstraints>
 </Table>

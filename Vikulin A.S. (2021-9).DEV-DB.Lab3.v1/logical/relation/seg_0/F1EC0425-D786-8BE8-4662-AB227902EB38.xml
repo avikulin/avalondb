@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Route_to_Location(Finish)" directorySegmentName="seg_0" id="F1EC0425-D786-8BE8-4662-AB227902EB38">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Route Location FK" directorySegmentName="seg_0" id="F1EC0425-D786-8BE8-4662-AB227902EB38">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 19:27:07 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>

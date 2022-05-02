@@ -23,6 +23,23 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>ИД транспортного средства (ТС)</synonym>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ModelId" id="BF783666-5D3F-8B40-40E0-C4240CF18D14">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-11 19:46:16 UTC</createdTime>
+<generatorID>EA4AAD4D-C15C-3061-2B33-C89FE4911DEB</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>8A4F1135-DF89-9F96-45DE-A5C5BF2C56A2</referedAttribute>
+<synonym>Код модели</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -36,6 +53,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Серийный номер ТС</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -49,6 +67,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Регистрационный номер ТС</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -62,6 +81,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Год выпуска ТС</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -75,6 +95,7 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<synonym>Гарантийный период</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -87,24 +108,23 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Максимальный пробег</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ModelId" id="BF783666-5D3F-8B40-40E0-C4240CF18D14">
+<Attribute name="IsActive" id="CE009345-C365-9693-7B21-0DEDFE700D39">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-11 19:46:16 UTC</createdTime>
-<generatorID>EA4AAD4D-C15C-3061-2B33-C89FE4911DEB</generatorID>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>B9EE238D-7063-274D-E8FF-44112790DD4A</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<referedAttribute>8A4F1135-DF89-9F96-45DE-A5C5BF2C56A2</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT037</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -119,6 +139,33 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>BA80BF67-4E1B-FAF1-FF31-0E6E42154F94</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1EE0A4B4-3EE7-15AF-C07F-7B72533036F5" name="VEHICLE ITEM SER NUM UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>57D7E00A-D455-0EB0-2220-40C74AFE654A</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>BF783666-5D3F-8B40-40E0-C4240CF18D14</attributeRef>
+<attributeRef>53BFBC18-9F0D-3BFD-70FD-BF624AD903CE</attributeRef>
+<attributeRef>C83BD243-CAF2-0C81-00C7-CBD1F70FB655</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="ED695D75-CFEB-5CAB-3937-563BDECC143F" name="VEHICLE ITEM REG NUM UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>D1BF566D-F5FB-3A16-26F5-CC4B679B0FEB</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>807B32D4-F018-404F-4EBD-98C413E4FB92</attributeRef>
+<attributeRef>CE009345-C365-9693-7B21-0DEDFE700D39</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

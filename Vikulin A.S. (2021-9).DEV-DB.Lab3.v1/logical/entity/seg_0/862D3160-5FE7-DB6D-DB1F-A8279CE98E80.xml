@@ -16,9 +16,9 @@
 <normalForm>Third</normalForm>
 <shortName>Журнал состояния рейсов</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="TripCode" id="0D5ABBE3-CA0B-1F41-2ABB-86B14829B847">
+<Attribute name="TripCode" id="76439855-23C9-C14D-2914-EB133A249AF6">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-27 11:43:55 UTC</createdTime>
+<createdTime>2022-05-02 21:56:39 UTC</createdTime>
 <generatorID>D737E081-5A6D-F409-9987-75B4670520AA</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
@@ -28,6 +28,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="StateID" id="5089F007-878D-BFAB-24C1-1E3A122A31A1">
@@ -39,19 +40,21 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <referedAttribute>3AFAA1BB-C2D8-F2CE-3351-AB66584E651D</referedAttribute>
+<synonym>Код статуса рейса</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DateTimeRegistered" id="19D5455D-B730-8B94-48F0-89AF966D2178">
+<Attribute name="DateTimeRegister" id="19D5455D-B730-8B94-48F0-89AF966D2178">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 12:07:51 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<synonym>Дата регистрации состояния рейса</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
@@ -68,8 +71,21 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0D5ABBE3-CA0B-1F41-2ABB-86B14829B847</attributeRef>
+<attributeRef>76439855-23C9-C14D-2914-EB133A249AF6</attributeRef>
 <attributeRef>5089F007-878D-BFAB-24C1-1E3A122A31A1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="769B8F23-0FFC-625A-19F0-5059C9263B65" name="TripStateHistory UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>DA9A26FC-FF71-FBB7-9315-E504794D8A4E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>5089F007-878D-BFAB-24C1-1E3A122A31A1</attributeRef>
+<attributeRef>19D5455D-B730-8B94-48F0-89AF966D2178</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

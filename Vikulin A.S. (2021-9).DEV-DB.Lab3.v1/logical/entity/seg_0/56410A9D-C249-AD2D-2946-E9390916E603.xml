@@ -23,6 +23,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>ИД посадочного места</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -38,6 +39,7 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <referedAttribute>8A4F1135-DF89-9F96-45DE-A5C5BF2C56A2</referedAttribute>
+<synonym>Код модели</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -52,6 +54,7 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<synonym>Разрешается перевозить детей (до 3-х лет)</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -65,6 +68,7 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
+<synonym>Разрешается перевозить питомцев</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT034</logicalDatatype>
@@ -82,6 +86,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>E6DA3F96-C512-12CD-83CE-868FC8A4F65F</attributeRef>
+<attributeRef>48B85230-FC28-EEDD-92B0-21D638F8FB4B</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

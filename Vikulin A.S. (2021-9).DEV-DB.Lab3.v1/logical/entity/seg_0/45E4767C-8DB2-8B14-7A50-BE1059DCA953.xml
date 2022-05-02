@@ -42,6 +42,20 @@
 <dataTypeSize>200 CHAR</dataTypeSize>
 <ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="CatId" id="2901C011-F45F-5B73-88CF-B7849D6BAC03">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 14:21:22 UTC</createdTime>
+<generatorID>32E71391-C790-65EE-81BD-4CA5F242687E</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<referedAttribute>270A6B63-5186-B637-05B1-172E4E95F6E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="31592D41-4694-E1E3-9C8E-32EEF40BF306" name="VehicleModel PK">
@@ -54,6 +68,18 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>8A4F1135-DF89-9F96-45DE-A5C5BF2C56A2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0A89EE76-2B3E-B93D-75BC-2DD16C219510" name="VEHICLE MODEL UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>60BA6F1B-6EA6-CDB1-3331-47CD048A83FE</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>FBF641BB-B3F0-309F-02C1-3A177A0EB6FD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

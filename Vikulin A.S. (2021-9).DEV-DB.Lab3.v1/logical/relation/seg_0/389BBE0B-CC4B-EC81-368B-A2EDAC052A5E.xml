@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TripStates_TripStates_FK" directorySegmentName="seg_0" id="389BBE0B-CC4B-EC81-368B-A2EDAC052A5E">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-02 21:36:00 UTC</createdTime>
+<generatorID>201597FA-B063-1247-8955-7C63B19BB1C3</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<targetPk>4AF4767B-155F-0ADD-3D9E-0453A4D10F41</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E69C945A-8A8F-7ED8-F418-7CA79C1689D0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E69C945A-8A8F-7ED8-F418-7CA79C1689D0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

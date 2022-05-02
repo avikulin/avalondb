@@ -23,10 +23,12 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>ИД рейса</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="RouteID" id="0652FED9-8F84-E5D2-60E7-8CC235DCB00C">
 <createdBy>Andrey Vikulin</createdBy>
@@ -37,12 +39,13 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <referedAttribute>4E7329D5-8345-E735-773F-37B9CA3AC809</referedAttribute>
+<synonym>Код маршрута</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="VehicleID" id="33552D78-8377-DDB5-47C4-AC5825BB7250">
+<Attribute name="VehicleId" id="33552D78-8377-DDB5-47C4-AC5825BB7250">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 11:31:24 UTC</createdTime>
 <generatorID>EFA48F95-6743-C069-7A17-4BD205648ED3</generatorID>
@@ -51,33 +54,35 @@
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
 <referedAttribute>BA80BF67-4E1B-FAF1-FF31-0E6E42154F94</referedAttribute>
+<synonym>Код ТС</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DriverID" id="32895494-7558-0DD8-BE5C-A07DF501C35B">
+<Attribute name="DriverId" id="8F007843-93E7-5BC7-B1B4-F37803CD1BCA">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-27 11:24:01 UTC</createdTime>
+<createdTime>2022-05-02 21:53:54 UTC</createdTime>
 <generatorID>52F78263-2ADC-D648-F60A-E7CBBD913A89</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
-<referedAttribute>DB974BEE-C0BE-6949-9D4C-8465EFA31A0F</referedAttribute>
+<referedAttribute>F16E7B9C-F2C0-52DC-576A-7073FD2E8989</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Date" id="F7552237-0AEC-1BDB-8E70-C4BBF65AB1CD">
+<Attribute name="PlannedStartDate" id="F7552237-0AEC-1BDB-8E70-C4BBF65AB1CD">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 11:28:13 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Планируемая дата отправления</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -85,9 +90,10 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="CA3AF1BA-0AF0-6F18-0E8B-1E1CEBC459EF" name="ScheduledTrips PK">
+<identifier id="0C562141-CAC2-2EBE-C4CB-9CA799F2C38C" name="ScheduledTrips PK">
 <createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-27 11:39:40 UTC</createdTime>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>18F01FD5-BD8F-23FE-B8A3-1535CFD8EA8D</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
@@ -95,6 +101,20 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>A2CCC76A-4EE6-E6D6-7346-A006F921CD84</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F2E440B7-25BA-74F8-F442-5A6D80D54D92" name="ScheduledTrips UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>DAF81A08-69BC-DAE0-31BF-1ADB1114B8B6</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>0652FED9-8F84-E5D2-60E7-8CC235DCB00C</attributeRef>
+<attributeRef>33552D78-8377-DDB5-47C4-AC5825BB7250</attributeRef>
+<attributeRef>F7552237-0AEC-1BDB-8E70-C4BBF65AB1CD</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

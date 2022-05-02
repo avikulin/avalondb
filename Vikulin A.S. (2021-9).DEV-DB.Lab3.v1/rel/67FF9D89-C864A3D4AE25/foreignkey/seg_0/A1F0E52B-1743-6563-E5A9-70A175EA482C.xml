@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1F0E52B-1743-6563-E5A9-70A175EA482C" containerWithKeyObject="C74D3AE2-0427-FDB1-CB35-3AE4E7340B10" localFKIndex="183803E1-1066-B60B-3738-8788049F3E1F" name="ROUTE_LOCATION_FKv1">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1F0E52B-1743-6563-E5A9-70A175EA482C" containerWithKeyObject="C74D3AE2-0427-FDB1-CB35-3AE4E7340B10" localFKIndex="183803E1-1066-B60B-3738-8788049F3E1F" name="Route_Location_FKv2">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>6E86FEAE-36CE-779D-D90D-96D9B5A8D37E</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <referredTableLongName>Location</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>RESTRICT</deleteRule>
 <referredTableID>43099C65-E025-76B2-6009-894D34BD37CB</referredTableID>
 <keyObject>D7B724C7-EFE8-3F7C-88CC-55F686DE8820</keyObject>
 <referredKeyID>D7B724C7-EFE8-3F7C-88CC-55F686DE8820</referredKeyID>

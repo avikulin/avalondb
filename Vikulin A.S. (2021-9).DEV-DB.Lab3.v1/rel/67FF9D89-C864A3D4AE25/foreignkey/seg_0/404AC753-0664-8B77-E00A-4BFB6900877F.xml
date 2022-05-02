@@ -5,7 +5,7 @@
 <generatorID>EFA48F95-6743-C069-7A17-4BD205648ED3</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <referredTableLongName>VehicleItem</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>RESTRICT</deleteRule>
 <referredTableID>5BC9FB60-0BF0-D8C3-1D21-6B701A769CF2</referredTableID>
 <keyObject>C3A55F7C-2AB7-AD9F-8686-A37F188CE91C</keyObject>
 <referredKeyID>C3A55F7C-2AB7-AD9F-8686-A37F188CE91C</referredKeyID>

@@ -5,12 +5,12 @@
 <generatorID>8977A95B-B90B-AFDC-DEE4-78799E913C7D</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <referredTableLongName>SeatsLayoutPlan</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>RESTRICT</deleteRule>
 <referredTableID>5BCC4D5A-0DB8-7D9E-F966-1CDE46BC6F03</referredTableID>
 <keyObject>DE252B78-63A3-6790-29A0-C2488C8DF13A</keyObject>
 <referredKeyID>DE252B78-63A3-6790-29A0-C2488C8DF13A</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>SeatID</refColNames>
+<refColNames>SeatID,ModelId</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

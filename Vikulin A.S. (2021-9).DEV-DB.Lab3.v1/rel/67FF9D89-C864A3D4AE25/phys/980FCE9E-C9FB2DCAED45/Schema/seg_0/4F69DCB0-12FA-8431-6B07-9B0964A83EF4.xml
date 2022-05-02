@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="PLANS" directorySegmentName="seg_0" id="4F69DCB0-12FA-8431-6B07-9B0964A83EF4">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 10:22:58 UTC</createdTime>
+<comment><![CDATA[Сведения о запланированных рейсах
+]]></comment>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+</SchemaSqlServerv2k5>

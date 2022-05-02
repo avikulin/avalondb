@@ -14,7 +14,7 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<shortName>Типы точек маршрута</shortName>
+<shortName>Типы местоположений (точек маршрута)</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="TypeID" id="FA32111B-F251-CFFC-ACC5-8AFFFA70312C">
 <createdBy>Andrey Vikulin</createdBy>
@@ -23,6 +23,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>ИД типа местоположения</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -36,6 +37,7 @@
 <engineerTo>
 <item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
 </engineerTo>
+<synonym>Наименование типа местоположения</synonym>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
@@ -54,6 +56,18 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>FA32111B-F251-CFFC-ACC5-8AFFFA70312C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4FE86A30-822C-BE4E-B51F-FABC243A8C3D" name="LOCATION TYPES NAME UN">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-05-01 14:39:29 UTC</createdTime>
+<generatorID>D87E8F80-A822-67B8-7A7E-CFAC826DFAA9</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<engineerTo>
+<item key="67FF9D89-9A4C-EF90-B4F9-C864A3D4AE25" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>DD834621-8083-A0AC-2592-15689F08EB80</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

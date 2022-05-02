@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="692CDCE3-CEE3-9C61-E346-5597CB4D4292" containerWithKeyObject="79717B35-580B-9932-AA4F-A4F06461EEB2" localFKIndex="E6792DBC-FF53-C9F7-E06B-7A4FD5E8D489" name="Person_Sex_FK">
+<createdBy>Andrey Vikulin</createdBy>
+<createdTime>2022-04-30 20:57:51 UTC</createdTime>
+<generatorID>1EB2D143-3646-3654-1B23-901B0B99C085</generatorID>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<referredTableLongName>Sex</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>FEFA10FF-1A10-018F-A8ED-1A681F9B96CF</referredTableID>
+<keyObject>27B60DEB-86BD-F275-DAE1-6CA80EFBB553</keyObject>
+<referredKeyID>27B60DEB-86BD-F275-DAE1-6CA80EFBB553</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SexId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="PLANS" directorySegmentName="seg_0" id="B158014E-7695-BAAD-BA57-9B2E6C6405FF">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 20:21:56 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<ordsAlias>schema_4</ordsAlias>
+</SchemaObject>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9992AF5-E3C9-38B5-03BD-912FBBD51BAD" name="TripStates">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9992AF5-E3C9-38B5-03BD-912FBBD51BAD" schemaObject="511A4E58-A7E0-4946-58DF-2DADDDAB3515" name="TripStates">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>E69C945A-8A8F-7ED8-F418-7CA79C1689D0</generatorID>
@@ -46,7 +46,7 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -106,19 +106,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="65E20CA1-A493-ACB7-F1EA-A6065CDA84B6" name="TripStates_StateID_IsInitial_IsInProgress_isTerminal_UN">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-05-01 10:08:39 UTC</createdTime>
-<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="46AF448C-2253-D7F3-2AEB-10995C0E1DB7"/>
-<colUsage columnID="A7F72D29-5176-1F2B-915B-BB1CD2B5CD42"/>
-<colUsage columnID="CA10CD08-9B4F-C915-7768-5BC42F5DC597"/>
-<colUsage columnID="F694D1D1-5C8F-10CA-1B10-19DBEA869D73"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="7CCB2E5C-787C-FBA4-DCC3-CF687F373BAB" name="TripStates_Description_UN">

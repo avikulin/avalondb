@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.SequenceSqlServerv2k12" name="TicketCodeSeq" directorySegmentName="seg_0" id="3C780E46-4322-7C66-FCBC-4171C5CDF79B">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 22:54:43 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<cache>10</cache>
+<database>DB_NULLELEMENT</database>
+<incrementBy>1</incrementBy>
+<integerType>int</integerType>
+<schema>56812EC1-EF22-66DA-07A0-625411630DEA</schema>
+<startWith>1</startWith>
+</SequenceSqlServerv2k12>

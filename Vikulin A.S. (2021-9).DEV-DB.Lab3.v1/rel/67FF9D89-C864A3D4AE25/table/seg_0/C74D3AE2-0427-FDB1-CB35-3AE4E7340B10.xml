@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C74D3AE2-0427-FDB1-CB35-3AE4E7340B10" name="Route">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C74D3AE2-0427-FDB1-CB35-3AE4E7340B10" schemaObject="B158014E-7695-BAAD-BA57-9B2E6C6405FF" name="Route">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-11 20:03:39 UTC</createdTime>
 <generatorID>E64CD2EA-F25C-DE98-EE1C-C824FE62A6B4</generatorID>

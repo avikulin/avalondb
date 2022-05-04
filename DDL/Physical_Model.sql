@@ -1,61 +1,962 @@
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Schema\DICT.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Schema\FLEET.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Schema\PLANS.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Schema\REG.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Schema\TRANS.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\FLEET.Driver.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\FLEET.Driver_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.IdentityDocType.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.IdentityDocType_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\REG.IdentityDocument.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\REG.IdentityDocument_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.Location.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.Location_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.LocationTypes.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.LocationTypes_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\REG.Person.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\REG.Person_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\PLANS.Route.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\PLANS.Route_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\PLANS.ScheduledTrips.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\PLANS.ScheduledTrips_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.SeatsLayoutPlan.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.SeatsLayoutPlan_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.Sex.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.Sex_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.TariffType.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.TariffType_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\TRANS.TiÑket.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\TRANS.TiÑket_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\PLANS.TripStateHistory.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\PLANS.TripStateHistory_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.TripStates.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.TripStates_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.VehicleCathegory.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.VehicleCathegory_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\FLEET.VehicleItem.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\FLEET.VehicleItem_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.VehicleModel.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Table\DICT.VehicleModel_Constraints.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Driver_IdentityDocument_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Driver_Person_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Driver_VehicleCathegory_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\IdentityDocument_IdentityDocType_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\IdentityDocument_Person_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Location_LocationTypes_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Person_Sex_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Route_Location_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Route_Location_FKv2.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\ScheduledTrips_Driver_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\ScheduledTrips_Driver_FKv2v1.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\ScheduledTrips_VehicleItem_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\SeatsLayoutPlan_VehicleModel_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Tiket_Person_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Tiket_SeatsLayoutPlan_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\Tiket_TariffType_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\TripStateHistory_ScheduledTrips_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\TripStateHistory_TripStates_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\TripStates_TripStates_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\VehicleItem_VehicleModel_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\ForeignKey\VehicleModel_VehicleCathegory_FK.sql
-@@Vikulin_A.S._(2021-9).DEV-DB.Lab3.v1\Physical_Model\SQL_Server_2012\DataObjects\Sequence\PLANS.TripCodeSeq.sql
+-- Generated by Oracle SQL Developer Data Modeler 20.4.1.406.0906
+--   at:        2022-05-03 23:25:25 MSK
+--   site:      SQL Server 2012
+--   type:      SQL Server 2012
+
+
+
+CREATE TABLE FLEET.Driver 
+    (
+     DriverId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     PersonId INTEGER NOT NULL , 
+     CatId INTEGER NOT NULL , 
+     DocId INTEGER NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    Driver_Person_Cathegory_IDX ON FLEET.Driver 
+    ( 
+     PersonId , 
+     CatId 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    Driver_Licence_IDX ON FLEET.Driver 
+    ( 
+     DocId 
+    ) 
+GO 
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    Driver__IDX ON FLEET.Driver 
+    ( 
+     PersonId 
+    ) 
+GO
+
+ALTER TABLE FLEET.Driver ADD CONSTRAINT Driver_PK PRIMARY KEY CLUSTERED (DriverId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE FLEET.Driver ADD CONSTRAINT DriverUN UNIQUE NONCLUSTERED (PersonId, CatId, DocId)
+GO
+
+CREATE TABLE DICT.IdentityDocType 
+    (
+     DocTypeId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     TypeDescription VARCHAR (50) NOT NULL , 
+     AllowToDrive BIT NOT NULL , 
+     AllowToTrip BIT NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    IdentityDocType_Desc_IDX ON DICT.IdentityDocType 
+    ( 
+     TypeDescription 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    IdentityDocType_AllowDrive_IDX ON DICT.IdentityDocType 
+    ( 
+     AllowToDrive 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    IdentityDocType_AllowTrip_IDX ON DICT.IdentityDocType 
+    ( 
+     AllowToTrip 
+    ) 
+GO
+
+ALTER TABLE DICT.IdentityDocType ADD CONSTRAINT IdentityDocType_PK PRIMARY KEY CLUSTERED (DocTypeId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.IdentityDocType ADD CONSTRAINT IdentityDocType_TypeDescription_UN UNIQUE NONCLUSTERED (TypeDescription)
+GO
+
+CREATE TABLE REG.IdentityDocument 
+    (
+     DocId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     DocTypeId INTEGER NOT NULL , 
+     PersonId INTEGER NOT NULL , 
+     SeriesNum NVARCHAR (20) NOT NULL , 
+     DocumentNum NVARCHAR (20) NOT NULL , 
+     IssuerOrg NVARCHAR (200) NOT NULL , 
+     IssueDate DATE NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    IdentityDocument_Person_IDX ON REG.IdentityDocument 
+    ( 
+     PersonId 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    IdentityDocument_Person_DocType_IDXv1 ON REG.IdentityDocument 
+    ( 
+     DocTypeId , 
+     PersonId 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    IdentityDocument_SerNum_IDX ON REG.IdentityDocument 
+    ( 
+     SeriesNum , 
+     DocumentNum 
+    ) 
+GO
+
+ALTER TABLE REG.IdentityDocument ADD CONSTRAINT IdentityDocument_PK PRIMARY KEY CLUSTERED (DocId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE REG.IdentityDocument ADD CONSTRAINT IdentityDocument_DocTypeId_PersonId_SeriesNum_DocumentNum_UN UNIQUE NONCLUSTERED (DocTypeId, PersonId, SeriesNum, DocumentNum)
+GO
+
+ALTER TABLE REG.IdentityDocument ADD CONSTRAINT IdentityDocument_CK_1 CHECK ( IssueDate > '1920-01-01' ) 
+GO
+
+CREATE TABLE DICT.Location 
+    (
+     LocationID INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     TypeID NVARCHAR (20) NOT NULL , 
+     LocationAddress NVARCHAR (250) NOT NULL , 
+     GPSlatitude NUMERIC (10,6) NOT NULL , 
+     GPSlongtitude NUMERIC (10,6) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    LOCATION_ID_IDX ON DICT.Location 
+    ( 
+     LocationID 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    LOCATION_ADDRESS_IDX ON DICT.Location 
+    ( 
+     LocationAddress 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    LOCATION_TYPE_IDX ON DICT.Location 
+    ( 
+     TypeID 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    LOCATION_GRP_IDX ON DICT.Location 
+    ( 
+     GPSlatitude , 
+     GPSlongtitude 
+    ) 
+GO
+
+ALTER TABLE DICT.Location ADD CONSTRAINT Location_PK PRIMARY KEY CLUSTERED (LocationID)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.Location ADD CONSTRAINT Location_LocationAddress_UN UNIQUE NONCLUSTERED (LocationAddress)
+GO
+ALTER TABLE DICT.Location ADD CONSTRAINT Location_GPSlatitude_GPSlongtitude_UN UNIQUE NONCLUSTERED (GPSlatitude, GPSlongtitude)
+GO
+
+CREATE TABLE DICT.LocationTypes 
+    (
+     TypeID NVARCHAR (20) NOT NULL , 
+     TypeName NVARCHAR (200) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    LOCATION_TYPES_IDX ON DICT.LocationTypes 
+    ( 
+     TypeID 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    LOCATION_NAME_IDX ON DICT.LocationTypes 
+    ( 
+     TypeName 
+    ) 
+GO
+
+ALTER TABLE DICT.LocationTypes ADD CONSTRAINT LocationTypes_PK PRIMARY KEY CLUSTERED (TypeID)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.LocationTypes ADD CONSTRAINT LocationTypes_TypeName_UN UNIQUE NONCLUSTERED (TypeName)
+GO
+
+CREATE TABLE REG.Person 
+    (
+     PersonId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     LastName NVARCHAR (100) NOT NULL , 
+     FirstName NVARCHAR (100) NOT NULL , 
+     MiddleName NVARCHAR (100) NOT NULL , 
+     BirthDate DATE NOT NULL , 
+     SexId NCHAR (1) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    Person_Name_IDX ON REG.Person 
+    ( 
+     LastName , 
+     FirstName , 
+     MiddleName 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    Person_BirthDate_IDX ON REG.Person 
+    ( 
+     BirthDate 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    Person_Sex_IDX ON REG.Person 
+    ( 
+     SexId 
+    ) 
+GO
+
+ALTER TABLE REG.Person ADD CONSTRAINT Person_PK PRIMARY KEY CLUSTERED (PersonId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE REG.Person ADD CONSTRAINT Person_LastName_FirstName_MiddleName_BirthDate_SexId_UN UNIQUE NONCLUSTERED (LastName, FirstName, MiddleName, BirthDate, SexId)
+GO
+
+ALTER TABLE REG.Person ADD CONSTRAINT Person_CK_1 CHECK ( BirthDate > '1920-01-01' ) 
+GO
+
+CREATE TABLE PLANS.Route 
+    (
+     RouteID INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     RouteDescription NVARCHAR (200) NOT NULL , 
+     RouteLength INTEGER NOT NULL , 
+     TimeToDriveEst INTEGER NOT NULL , 
+     FromLocationId INTEGER NOT NULL , 
+     ToLocationId INTEGER NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    Route_Desc_IDX ON PLANS.Route 
+    ( 
+     RouteDescription 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    Route_From_To_IDX ON PLANS.Route 
+    ( 
+     FromLocationId , 
+     ToLocationId 
+    ) 
+GO
+
+ALTER TABLE PLANS.Route ADD CONSTRAINT Route_PK PRIMARY KEY CLUSTERED (RouteID)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE PLANS.Route ADD CONSTRAINT Route_FromLocationID_ToLocationID_UN UNIQUE NONCLUSTERED (FromLocationId, ToLocationId)
+GO
+
+ALTER TABLE PLANS.Route ADD CONSTRAINT Route_From_TO_CK CHECK ( FromLocationId <> ToLocationId ) 
+GO
+
+
+ALTER TABLE PLANS.Route ADD CONSTRAINT Route_Length_CK CHECK ( RouteLength > 0 ) 
+GO
+
+
+ALTER TABLE PLANS.Route ADD CONSTRAINT Route_Time_CK CHECK ( TimeToDriveEst > 0 ) 
+GO
+
+CREATE TABLE PLANS.ScheduledTrips 
+    (
+     TripCode NVARCHAR (20) NOT NULL , 
+     RouteID INTEGER NOT NULL , 
+     VehicleID NVARCHAR (20) NOT NULL , 
+     DriverId INTEGER NOT NULL , 
+     PlannedStartDate DATE NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    ScheduledTrips_Route_IDX ON PLANS.ScheduledTrips 
+    ( 
+     RouteID 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    ScheduledTrips_Route_Date_IDXv1 ON PLANS.ScheduledTrips 
+    ( 
+     RouteID , 
+     PlannedStartDate 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    ScheduledTrips_Driver_Date_IDX ON PLANS.ScheduledTrips 
+    ( 
+     DriverId , 
+     PlannedStartDate 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    ScheduledTrips_Vehicle_Date_IDX ON PLANS.ScheduledTrips 
+    ( 
+     VehicleID , 
+     PlannedStartDate 
+    ) 
+GO
+
+ALTER TABLE PLANS.ScheduledTrips ADD CONSTRAINT ScheduledTrips_PK PRIMARY KEY CLUSTERED (TripCode)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE PLANS.ScheduledTrips ADD CONSTRAINT ScheduledTrips_RouteID_VehicleId_PlannedStartDate_UN UNIQUE NONCLUSTERED (RouteID, VehicleID, PlannedStartDate)
+GO
+
+ALTER TABLE PLANS.ScheduledTrips ADD CONSTRAINT ScheduledTrips_Date_CK CHECK ( PlannedStartDate > '1990-01-01' ) 
+GO
+
+CREATE TABLE DICT.SeatsLayoutPlan 
+    (
+     SeatID NVARCHAR (5) NOT NULL , 
+     ModelId NVARCHAR (20) NOT NULL , 
+     AllowKids BIT , 
+     AllowPets BIT 
+    )
+GO
+
+ALTER TABLE DICT.SeatsLayoutPlan ADD CONSTRAINT SeatsLayoutPlan_PK PRIMARY KEY CLUSTERED (SeatID, ModelId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE DICT.Sex 
+    (
+     SexId NCHAR (1) NOT NULL , 
+     Name NVARCHAR (20) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    Sex_Name_IDX ON DICT.Sex 
+    ( 
+     Name 
+    ) 
+GO
+
+ALTER TABLE DICT.Sex ADD CONSTRAINT Sex_PK PRIMARY KEY CLUSTERED (SexId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.Sex ADD CONSTRAINT Sex_Name_UN UNIQUE NONCLUSTERED (Name)
+GO
+
+CREATE TABLE DICT.TariffType 
+    (
+     TariffId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     CodeName NVARCHAR (20) NOT NULL , 
+     Description NVARCHAR (200) NOT NULL 
+    )
+GO
+
+ALTER TABLE DICT.TariffType ADD CONSTRAINT TariffType_PK PRIMARY KEY CLUSTERED (TariffId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.TariffType ADD CONSTRAINT TariffType_UN UNIQUE NONCLUSTERED (CodeName)
+GO
+
+CREATE TABLE TRANS.Tiñket 
+    (
+     TicketNumber NVARCHAR (20) NOT NULL , 
+     TripCode NVARCHAR (20) NOT NULL , 
+     ModelId NVARCHAR (20) NOT NULL , 
+     SeatID NVARCHAR (5) NOT NULL , 
+     PersonId INTEGER NOT NULL , 
+     TariffId INTEGER NOT NULL , 
+     Price NUMERIC (28) NOT NULL , 
+     DateOfSelling DATE NOT NULL 
+    )
+GO
+
+ALTER TABLE TRANS.Tiñket ADD CONSTRAINT Tiñket_PK PRIMARY KEY CLUSTERED (TicketNumber)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE TRANS.Tiñket ADD CONSTRAINT Tiñket_UN UNIQUE NONCLUSTERED (TripCode, PersonId, SeatID, DateOfSelling)
+GO
+
+ALTER TABLE TRANS.Tiñket ADD CONSTRAINT Tiñket_Price_CK CHECK ( Price > 0 ) 
+GO
+
+CREATE TABLE PLANS.TripStateHistory 
+    (
+     TripCode NVARCHAR (20) NOT NULL , 
+     StateID NVARCHAR (10) NOT NULL , 
+     DateTimeRegister DATETIME NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    TripStateHistory_DateTime_IDX ON PLANS.TripStateHistory 
+    ( 
+     DateTimeRegister 
+    ) 
+GO
+
+ALTER TABLE PLANS.TripStateHistory ADD CONSTRAINT TripStateHistory_PK PRIMARY KEY CLUSTERED (StateID, TripCode)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE PLANS.TripStateHistory ADD CONSTRAINT TripStateHistory_TripCode_StateID_DateTimeRegister_UN UNIQUE NONCLUSTERED (StateID, DateTimeRegister)
+GO
+
+CREATE TABLE DICT.TripStates 
+    (
+     StateID NVARCHAR (10) NOT NULL , 
+     PrevStateID NVARCHAR (10) , 
+     Description NVARCHAR (50) NOT NULL , 
+     IsInitial BIT NOT NULL , 
+     IsInProgress BIT NOT NULL , 
+     isTerminal BIT NOT NULL , 
+     AllowBooking BIT NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    TripStates_Desc_IDX ON DICT.TripStates 
+    ( 
+     Description 
+    ) 
+GO
+
+ALTER TABLE DICT.TripStates ADD CONSTRAINT TripStates_PK PRIMARY KEY CLUSTERED (StateID)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.TripStates ADD CONSTRAINT TripStates_Description_UN UNIQUE NONCLUSTERED (Description)
+GO
+
+ALTER TABLE DICT.TripStates ADD CONSTRAINT TripStates_Type_CK CHECK ( 1 = 
+(IsInitial & ~IsInProgress & ~IsTerminal) | 
+(~IsInitial & IsInProgress & ~IsTerminal) | 
+(~IsInitial & ~IsInProgress & IsTerminal) ) 
+GO
+
+CREATE TABLE DICT.VehicleCathegory 
+    (
+     CatId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
+     LevelCode NVARCHAR (2) NOT NULL , 
+     LevelInfo NVARCHAR (100) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    VehicleCathegory_IDX ON DICT.VehicleCathegory 
+    ( 
+     LevelCode 
+    ) 
+GO
+
+ALTER TABLE DICT.VehicleCathegory ADD CONSTRAINT VehicleCathegory_PK PRIMARY KEY CLUSTERED (CatId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.VehicleCathegory ADD CONSTRAINT VehicleCathegory_LevelCode_UN UNIQUE NONCLUSTERED (LevelCode)
+GO
+
+CREATE TABLE FLEET.VehicleItem 
+    (
+     VehicleID NVARCHAR (20) NOT NULL , 
+     ModelId NVARCHAR (20) NOT NULL , 
+     SerialNumber NVARCHAR (100) NOT NULL , 
+     RegNumber NVARCHAR (100) NOT NULL , 
+     YearOfIssue INTEGER NOT NULL , 
+     GuaranteePeriod DATE , 
+     MaxTotalMileage INTEGER NOT NULL , 
+     IsActive BIT NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    VehicleItem_Model_IDX ON FLEET.VehicleItem 
+    ( 
+     ModelId 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    VehicleItem_RegNum_IDXv1 ON FLEET.VehicleItem 
+    ( 
+     RegNumber 
+    ) 
+GO
+
+ALTER TABLE FLEET.VehicleItem ADD CONSTRAINT VehicleItem_PK PRIMARY KEY CLUSTERED (VehicleID)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE FLEET.VehicleItem ADD CONSTRAINT VehicleItem_ModelId_SerialNumber_YearOfIssue_UN UNIQUE NONCLUSTERED (ModelId, SerialNumber, YearOfIssue)
+GO
+ALTER TABLE FLEET.VehicleItem ADD CONSTRAINT VehicleItem_RegNumber_IsActive_UN UNIQUE NONCLUSTERED (RegNumber, IsActive)
+GO
+
+ALTER TABLE FLEET.VehicleItem ADD CONSTRAINT VEHICLE_ITEM_CK_YEAR_OF_ISSUE CHECK ( YearOfIssue > 1950 ) 
+GO
+
+
+ALTER TABLE FLEET.VehicleItem ADD CONSTRAINT VEHICLE_ITEM_CK_GUARANTEE_PERIOD CHECK ( GuaranteePeriod > DATEADD(year,1, GETDATE())  ) 
+GO
+
+
+ALTER TABLE FLEET.VehicleItem ADD CONSTRAINT VEHICLE_ITEM_CK_MAX_MILEAGE CHECK ( MaxTotalMileage > 1000 ) 
+GO
+
+CREATE TABLE DICT.VehicleModel 
+    (
+     ModelId NVARCHAR (20) NOT NULL , 
+     ModelName NVARCHAR (200) NOT NULL , 
+     CatId INTEGER NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE NONCLUSTERED INDEX 
+    VehicleModel_Name_IDX ON DICT.VehicleModel 
+    ( 
+     ModelName 
+    ) 
+GO 
+
+
+CREATE NONCLUSTERED INDEX 
+    VehicleModel_Cathegory_IDX ON DICT.VehicleModel 
+    ( 
+     CatId 
+    ) 
+GO
+
+ALTER TABLE DICT.VehicleModel ADD CONSTRAINT VehicleModel_PK PRIMARY KEY CLUSTERED (ModelId)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+ALTER TABLE DICT.VehicleModel ADD CONSTRAINT VehicleModel_ModelName_UN UNIQUE NONCLUSTERED (ModelName)
+GO
+
+ALTER TABLE FLEET.Driver 
+    ADD CONSTRAINT Driver_IdentityDocument_FK FOREIGN KEY 
+    ( 
+     DocId
+    ) 
+    REFERENCES REG.IdentityDocument 
+    ( 
+     DocId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE FLEET.Driver 
+    ADD CONSTRAINT Driver_Person_FK FOREIGN KEY 
+    ( 
+     PersonId
+    ) 
+    REFERENCES REG.Person 
+    ( 
+     PersonId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE FLEET.Driver 
+    ADD CONSTRAINT Driver_VehicleCathegory_FK FOREIGN KEY 
+    ( 
+     CatId
+    ) 
+    REFERENCES DICT.VehicleCathegory 
+    ( 
+     CatId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE REG.IdentityDocument 
+    ADD CONSTRAINT IdentityDocument_IdentityDocType_FK FOREIGN KEY 
+    ( 
+     DocTypeId
+    ) 
+    REFERENCES DICT.IdentityDocType 
+    ( 
+     DocTypeId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE REG.IdentityDocument 
+    ADD CONSTRAINT IdentityDocument_Person_FK FOREIGN KEY 
+    ( 
+     PersonId
+    ) 
+    REFERENCES REG.Person 
+    ( 
+     PersonId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE DICT.Location 
+    ADD CONSTRAINT Location_LocationTypes_FK FOREIGN KEY 
+    ( 
+     TypeID
+    ) 
+    REFERENCES DICT.LocationTypes 
+    ( 
+     TypeID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE REG.Person 
+    ADD CONSTRAINT Person_Sex_FK FOREIGN KEY 
+    ( 
+     SexId
+    ) 
+    REFERENCES DICT.Sex 
+    ( 
+     SexId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.Route 
+    ADD CONSTRAINT Route_Location_FK FOREIGN KEY 
+    ( 
+     ToLocationId
+    ) 
+    REFERENCES DICT.Location 
+    ( 
+     LocationID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.Route 
+    ADD CONSTRAINT Route_Location_FKv2 FOREIGN KEY 
+    ( 
+     FromLocationId
+    ) 
+    REFERENCES DICT.Location 
+    ( 
+     LocationID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.ScheduledTrips 
+    ADD CONSTRAINT ScheduledTrips_Driver_FK FOREIGN KEY 
+    ( 
+     DriverId
+    ) 
+    REFERENCES FLEET.Driver 
+    ( 
+     DriverId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.ScheduledTrips 
+    ADD CONSTRAINT ScheduledTrips_Driver_FKv2v1 FOREIGN KEY 
+    ( 
+     RouteID
+    ) 
+    REFERENCES PLANS.Route 
+    ( 
+     RouteID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.ScheduledTrips 
+    ADD CONSTRAINT ScheduledTrips_VehicleItem_FK FOREIGN KEY 
+    ( 
+     VehicleID
+    ) 
+    REFERENCES FLEET.VehicleItem 
+    ( 
+     VehicleID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE DICT.SeatsLayoutPlan 
+    ADD CONSTRAINT SeatsLayoutPlan_VehicleModel_FK FOREIGN KEY 
+    ( 
+     ModelId
+    ) 
+    REFERENCES DICT.VehicleModel 
+    ( 
+     ModelId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE TRANS.Tiñket 
+    ADD CONSTRAINT Tiket_Person_FK FOREIGN KEY 
+    ( 
+     PersonId
+    ) 
+    REFERENCES REG.Person 
+    ( 
+     PersonId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE TRANS.Tiñket 
+    ADD CONSTRAINT Tiket_SeatsLayoutPlan_FK FOREIGN KEY 
+    ( 
+     SeatID, 
+     ModelId
+    ) 
+    REFERENCES DICT.SeatsLayoutPlan 
+    ( 
+     SeatID , 
+     ModelId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE TRANS.Tiñket 
+    ADD CONSTRAINT Tiket_TariffType_FK FOREIGN KEY 
+    ( 
+     TariffId
+    ) 
+    REFERENCES DICT.TariffType 
+    ( 
+     TariffId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE TRANS.Tiñket 
+    ADD CONSTRAINT Tiñket_ScheduledTrips_FK FOREIGN KEY 
+    ( 
+     TripCode
+    ) 
+    REFERENCES PLANS.ScheduledTrips 
+    ( 
+     TripCode 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.TripStateHistory 
+    ADD CONSTRAINT TripStateHistory_ScheduledTrips_FK FOREIGN KEY 
+    ( 
+     TripCode
+    ) 
+    REFERENCES PLANS.ScheduledTrips 
+    ( 
+     TripCode 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PLANS.TripStateHistory 
+    ADD CONSTRAINT TripStateHistory_TripStates_FK FOREIGN KEY 
+    ( 
+     StateID
+    ) 
+    REFERENCES DICT.TripStates 
+    ( 
+     StateID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE DICT.TripStates 
+    ADD CONSTRAINT TripStates_TripStates_FK FOREIGN KEY 
+    ( 
+     PrevStateID
+    ) 
+    REFERENCES DICT.TripStates 
+    ( 
+     StateID 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE FLEET.VehicleItem 
+    ADD CONSTRAINT VehicleItem_VehicleModel_FK FOREIGN KEY 
+    ( 
+     ModelId
+    ) 
+    REFERENCES DICT.VehicleModel 
+    ( 
+     ModelId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE DICT.VehicleModel 
+    ADD CONSTRAINT VehicleModel_VehicleCathegory_FK FOREIGN KEY 
+    ( 
+     CatId
+    ) 
+    REFERENCES DICT.VehicleCathegory 
+    ( 
+     CatId 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+
+
+-- Oracle SQL Developer Data Modeler Summary Report: 
+-- 
+-- CREATE TABLE                            17
+-- CREATE INDEX                            32
+-- ALTER TABLE                             69
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE DATABASE                          0
+-- CREATE DEFAULT                           0
+-- CREATE INDEX ON VIEW                     0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE ROLE                              0
+-- CREATE RULE                              0
+-- CREATE SCHEMA                            0
+-- CREATE SEQUENCE                          0
+-- CREATE PARTITION FUNCTION                0
+-- CREATE PARTITION SCHEME                  0
+-- 
+-- DROP DATABASE                            0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

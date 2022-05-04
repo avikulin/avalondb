@@ -1,9 +1,0 @@
-ALTER TABLE DICT.Location ADD CONSTRAINT Location_PK PRIMARY KEY CLUSTERED (LocationID)
-     WITH (
-     ALLOW_PAGE_LOCKS = ON , 
-     ALLOW_ROW_LOCKS = ON )
-GO
-ALTER TABLE DICT.Location ADD CONSTRAINT Location_LocationAddress_UN UNIQUE NONCLUSTERED (LocationAddress)
-GO
-ALTER TABLE DICT.Location ADD CONSTRAINT Location_GPSlatitude_GPSlongtitude_UN UNIQUE NONCLUSTERED (GPSlatitude, GPSlongtitude)
-GO

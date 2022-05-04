@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4D5D517-BAC3-1277-6BF2-7ECDFDAE0DCF" name="TariffType">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4D5D517-BAC3-1277-6BF2-7ECDFDAE0DCF" schemaObject="511A4E58-A7E0-4946-58DF-2DADDDAB3515" name="TariffType">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-30 20:57:51 UTC</createdTime>
 <generatorID>9D05CB92-89C0-D14F-9C4A-E19C2E16E6D1</generatorID>
@@ -29,9 +29,9 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20 CHAR</dataTypeSize>
-<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Description" id="E62BDF86-40F9-9C0A-4E8B-5757090B8B12">
@@ -41,9 +41,9 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 CHAR</dataTypeSize>
-<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -58,6 +58,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A35942B0-7924-1E90-1945-3A18A23448EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9A3D989-23FB-E858-3607-1C45C3B5F80B" name="TariffType_UN">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 16:52:49 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D0044C2-2877-93FF-CAD7-99C691AE7D0D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

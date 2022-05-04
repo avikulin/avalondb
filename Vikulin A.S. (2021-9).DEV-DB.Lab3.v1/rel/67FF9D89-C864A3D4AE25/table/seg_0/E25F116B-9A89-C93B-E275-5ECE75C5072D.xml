@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E25F116B-9A89-C93B-E275-5ECE75C5072D" name="VehicleCathegory">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E25F116B-9A89-C93B-E275-5ECE75C5072D" schemaObject="511A4E58-A7E0-4946-58DF-2DADDDAB3515" name="VehicleCathegory">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-30 20:57:51 UTC</createdTime>
 <generatorID>F4A1523F-677E-9972-392E-B97A73586C6C</generatorID>
@@ -29,7 +29,7 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>2 CHAR</dataTypeSize>
 <ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -41,7 +41,7 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>

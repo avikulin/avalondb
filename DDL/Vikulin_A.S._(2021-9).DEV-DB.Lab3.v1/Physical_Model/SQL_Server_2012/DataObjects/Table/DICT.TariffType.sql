@@ -1,7 +1,0 @@
-CREATE TABLE DICT.TariffType 
-    (
-     TariffId INTEGER NOT NULL IDENTITY NOT FOR REPLICATION , 
-     CodeName VARCHAR (20) NOT NULL , 
-     Description VARCHAR (200) NOT NULL 
-    )
-GO

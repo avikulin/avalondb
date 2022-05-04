@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D858BF4E-1075-1E6B-A559-302946CDFD77" name="ScheduledTrips">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D858BF4E-1075-1E6B-A559-302946CDFD77" schemaObject="B158014E-7695-BAAD-BA57-9B2E6C6405FF" name="ScheduledTrips">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>B7E8096D-860A-3D1E-1B60-2FB3C1452261</generatorID>
@@ -16,7 +16,7 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>

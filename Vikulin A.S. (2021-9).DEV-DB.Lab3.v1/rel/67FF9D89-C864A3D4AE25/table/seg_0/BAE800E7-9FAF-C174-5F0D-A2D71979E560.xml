@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAE800E7-9FAF-C174-5F0D-A2D71979E560" name="Tiсket">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAE800E7-9FAF-C174-5F0D-A2D71979E560" schemaObject="38BBD440-2BCF-81AF-E431-89EFF8CEF863" name="Tiсket">
 <createdBy>Andrey Vikulin</createdBy>
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>09915BC8-EF2A-9D2D-55B8-E80ECA0EAF5E</generatorID>
@@ -15,25 +15,27 @@
 <createdTime>2022-04-27 14:35:20 UTC</createdTime>
 <generatorID>5FC0DE78-8790-75D3-35DF-4411E96C8C2D</generatorID>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100 CHAR</dataTypeSize>
-<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TripCode" id="E7179260-FD6F-028D-5AA7-3BB41C4ECC97">
-<createdBy>Andrey Vikulin</createdBy>
-<createdTime>2022-04-27 14:35:20 UTC</createdTime>
-<generatorID>FE3959D4-61C0-5D38-E9AA-9567157F7C8A</generatorID>
+<Column name="TripCode" id="4DE6CF39-D9FA-238D-7315-33D805CDE9C4">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 14:00:00 UTC</createdTime>
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4248635-A1DC-8322-A265-FBA1AA01FD89" referredColumn="B46D6888-B58A-C9A2-D2E0-AA586139FA4E"/>
+</associations>
 </Column>
 <Column name="ModelId" id="7F027939-3880-D039-2A4D-547D2E94EE5B">
 <createdBy>Andrey Vikulin</createdBy>
@@ -58,7 +60,7 @@
 <ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT037</logicalDatatype>
 <dataTypeSize>5 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
@@ -131,8 +133,20 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D2CF0F8D-ED67-96CF-C8FA-0B17B6F21BB9"/>
+<colUsage columnID="1A98435C-0091-B298-0428-DE4E7011D3C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C8D9235-F306-91F0-7D5F-DC15002788D5" name="Tiсket_UN">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 19:00:57 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DE6CF39-D9FA-238D-7315-33D805CDE9C4"/>
 <colUsage columnID="E10A341C-358B-CECE-DB09-BE3C189CCB88"/>
+<colUsage columnID="D2CF0F8D-ED67-96CF-C8FA-0B17B6F21BB9"/>
+<colUsage columnID="806592A3-86FA-9FE4-E26A-771CFB8C546E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="087A0C35-A893-D1DC-5AC6-03BB4C47D375" name="Tiket_SeatsLayoutPlan_FK">
@@ -169,5 +183,23 @@
 <colUsage columnID="08213F9A-7DC6-37F2-9A10-FF3DDF777F10"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="F8823877-47B1-6B49-DDEC-82C273F69EBC" name="Tiсket_ScheduledTrips_FK">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 14:00:00 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DE6CF39-D9FA-238D-7315-33D805CDE9C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Tiсket_Price_CK" directorySegmentName="seg_0" id="EFD5F753-42A6-B0B3-EDE1-2016FA363421">
+<createdBy>a.vikulin</createdBy>
+<createdTime>2022-05-03 19:00:57 UTC</createdTime>
+<ownerDesignName>Vikulin A.S. (2021-9).DEV-DB.Lab3.v1</ownerDesignName>
+<rule><![CDATA[Price > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>
